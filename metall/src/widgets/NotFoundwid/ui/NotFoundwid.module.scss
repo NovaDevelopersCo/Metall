@@ -1,0 +1,31 @@
+.imgcon {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    margin-top: 45px;
+    pointer-events: none;
+}
+
+.slg404 {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    font-size: 22px;
+    color: #F4C024;
+    font-weight: bold;
+}
+
+.btncon {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    margin-top: 20px;
+}
+
+.btn404 {
+    font-size: 16px;
+    background-color: #FFC824;
+    border-radius: 10px;
+    padding: 17px 40px 17px 40px;
+    box-shadow: 0px 7px 6px rgba(95, 78, 17, 0.1);
+}
