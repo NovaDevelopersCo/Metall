@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "pretty": "prettier --write --cache --cache-location .cache/.prettiercache ./src/**/*.{js,jsx,mjs,ts,tsx,css,scss,sass,less}"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.2.3",
