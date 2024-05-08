@@ -1,9 +1,9 @@
-import Image from "next/image";
+import { SecondHeader } from '@/widgets/SecondHeader'
 
 export default function Home() {
-  return (
-    <main>
-     
-    </main>
-  );
+	return (
+		<main>
+			<SecondHeader />
+		</main>
+	)
 }

@@ -1,0 +1,15 @@
+.secondHeader {
+	@apply text-[#0D0D0D] w-full font-bold bg-white;
+	line-height: 19px;
+	padding: 22px;
+	box-shadow: 0px 6px 6px rgba(207, 207, 207, 0.06);
+}
+
+.secondHeaderNavigation {
+	@apply flex gap-2 flex-nowrap items-center justify-between;
+	max-width: 1200px; //сделать желательно компонент с контейнером
+	margin: 0 auto;
+}
+.menu {
+	@apply flex gap-2 flex-nowrap items-center justify-between;
+}
