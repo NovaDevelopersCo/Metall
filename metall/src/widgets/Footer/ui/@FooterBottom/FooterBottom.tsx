@@ -8,14 +8,18 @@ import Instagram from '@/shared/ui/socials/Instagram';
 const FooterTop = () => {
 
     return (
-        <div className={styles.footer__info}>
-            <ul className={styles.footer__soc}>
-                <li><Telegram /></li>
-                <li><WhatsApp /></li>
-                <li><VK /></li>
-                <li><Instagram /></li>
-            </ul>
-            <div className={styles.footer__contacts}>
+        <div className={styles.FooterInfo}>
+            <div className={styles.FooterSocials}>
+                <hr className={styles.Line} />
+                <ul className={styles.Icons}>
+                    <li><Telegram /></li>
+                    <li><WhatsApp /></li>
+                    <li><VK /></li>
+                    <li><Instagram /></li>
+                </ul>
+                <hr className={styles.Line} />
+            </div>
+            <div className={styles.FooterContacts}>
                 <p>metal@gmail.com</p>
                 <p>+7 (499) 938-95-77</p>
                 <p>Website developed by Nova developers</p>
