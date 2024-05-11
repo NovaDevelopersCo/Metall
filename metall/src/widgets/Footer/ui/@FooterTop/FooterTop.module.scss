@@ -1,43 +1,70 @@
-.FooterBox{
-  display: flex;
-  justify-content: center;
-  
+.FooterBox {
+  @apply flex justify-center;
 }
+
 .FooterColumn {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  margin: 81px 0 0 0;
-  li {
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 21px;
-  color: #000;
+  @apply flex justify-between max-w-screen-xl mx-24 mt-20; 
 }
-li:first-child {
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 23px;
+
+.FooterColumn li {
+  @apply text-base font-normal leading-6 text-black; 
 }
+
+.FooterColumn li:first-child {
+  @apply text-lg font-semibold leading-6; 
 }
-.FooterService{
-  display: grid;
-  grid-row-gap: 12px;
-  li{
-    justify-self: end;
-  }
+
+.FooterService {
+  @apply grid grid-rows-none gap-y-3; 
 }
-.FooterPages{
-  display: grid;
-  grid-row-gap: 12px;
-  li{
-    justify-self: start;
-  }
+
+
+.FooterService li {
+  @apply justify-self-end; 
 }
+
+.FooterPages {
+  @apply grid grid-rows-none gap-y-3; 
+}
+
+.FooterPages li {
+  @apply justify-self-start; 
+}
+
 .FooterTitle {
-  font-weight: 700;
-  color: #000;
-  font-size: 30px;
-  line-height: 36px;
-  margin:  0 0 0 100px;
+  @apply font-semibold text-black text-2xl leading-9 ml-24;
+}
+
+@media (max-width: 1200px) {
+  .FooterTitle {
+    @apply hidden; 
+  }
+
+  .FooterColumn {
+    @apply mt-8 mx-6; 
+  }
+}
+
+@media (max-width: 750px) {
+  .FooterColumn li {
+    @apply text-sm  leading-5; 
+  }
+
+  .FooterColumn li:first-child {
+    @apply text-base; 
+  }
+}
+
+@media (max-width: 500px) {
+  .FooterColumn {
+    @apply flex-col mt-8 mx-4; 
+  }
+
+  .FooterService {
+    @apply mt-4; 
+  }
+
+  .FooterService li {
+    @apply justify-self-start; 
+  }
 }

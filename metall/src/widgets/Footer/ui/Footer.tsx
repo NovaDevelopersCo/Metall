@@ -6,9 +6,7 @@ const Footer = () => {
     return (
         <footer>
             <div className={styles.FooterContainer}>
-                <div className={styles.FooterContent}>
-                    <FooterTop />
-                </div>
+                <FooterTop />
                 <FooterBottom />
             </div>
         </footer>
