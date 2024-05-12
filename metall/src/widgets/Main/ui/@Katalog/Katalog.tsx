@@ -21,7 +21,7 @@ export const Katalog = () => {
           <img src="/assets/square.png" alt="Перейти" className={style.buttonImage} />
           <img src="/assets/trub.png" alt="Перейти" className={style.buttonImage} />
           <img src="/assets/ugolok.png" alt="Перейти" className={style.buttonImage} />
-          <img src="/assets/slugi.png" alt="Перейти" className={style.buttonImage} />
+          <img src="/assets/slugi.png" alt="Перейти" className={style.buttonImageH} />
         </div>
     </div>
   ));
