@@ -3,6 +3,7 @@ import React from 'react';
 import Card from './@Card/Card';
 import { Katalog } from './@Katalog/Katalog';
 import  TextMap  from './@TextMap/Text'
+import Map from './@TextMap/@Map/Map'
 
 import style from './Main.module.scss';
 
@@ -30,6 +31,7 @@ const Main = () => {
       </div>
       <Katalog />
       <TextMap/>
+      <Map />
     </div>
   );
 };
