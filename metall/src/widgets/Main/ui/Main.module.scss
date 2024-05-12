@@ -10,6 +10,7 @@
 }
 
 .contTxt {
+  display: flex;
   position: absolute; 
   top: 10%;
   width: 80%; 
@@ -18,11 +19,11 @@
 }
 
 .Text {
+  display: flex;
   position: absolute; 
   color: white;
   z-index: 1;
   width: 35%; 
-  top: 30%;
   left: 10%; 
   font-size: 2vw; 
   font-weight: bold;
@@ -30,28 +31,28 @@
 }
 
 .H2Text {
+  display: flex;
   position: absolute; 
   color: white;
   z-index: 1;
-  width: 50%; 
-  top: 50%; 
+  width: 50%;  
   left: 10%; 
   opacity: 0px;
   font-size: 1.5vw; 
   display: flex;
-  margin-top: 100px;
+  margin-top: 7%;
 }
 
 .button {
-  position: absolute; 
-  margin-top: 260px;
-  left: 16.6%; 
+  display: flex;
+  position: relative; 
+  margin-top: 18%;
+  margin-left: 16.5%;
   transform: translate(-50%, -50%); 
   padding: 1em 2em; 
   border: none;
   border-radius: 10px 10px 10px 10px;
-  background-color: #ffc107; 
-  height: auto; 
+  background-color: #ffc107;  
   color: #000; 
   font-weight: bold;
   transition: background-color 0.3s ease, color 0.3s ease; 
@@ -77,7 +78,7 @@
 .Card1 h3, 
 .Card2 h3, 
 .Card3 h3 {
-  color: yellow;
+  color: #F4C024;
   margin-top: 20px;
   font-size: 20px;
 }
@@ -114,13 +115,12 @@
   align-items: center;
   text-align: center;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  border: 1px solid #cccccc; 
   width: 100%; 
   max-width: 400px;
   border-radius: 10px; 
   position: relative; 
   z-index: 1; 
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 1);
 }
 
 @media only screen and (max-width: 768px) {
