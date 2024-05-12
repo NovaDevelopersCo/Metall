@@ -12,10 +12,18 @@ const FooterTop = () => {
             <div className={styles.FooterSocials}>
                 <hr className={styles.Line} />
                 <ul className={styles.Icons}>
-                    <li ><Telegram /></li>
-                    <li><WhatsApp /></li>
-                    <li><VK /></li>
-                    <li><Instagram /></li>
+                    <li >
+                        <a href="#"><Telegram /></a>
+                    </li>
+                    <li>
+                        <a href="#"><WhatsApp /></a>
+                    </li>
+                    <li>
+                        <a href="#"><VK /></a>
+                    </li>
+                    <li>
+                        <a href="#"><Instagram /></a>
+                    </li>
                 </ul>
                 <hr className={styles.Line} />
             </div>
