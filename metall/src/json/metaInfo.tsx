@@ -1,4 +1,4 @@
-// metaInfo.ts
+
 export interface MetallInfo {
   title: string;
   price: number;
