@@ -27,7 +27,7 @@
     margin-left: 60%;
 }
 
-.Card{
+.Card {
     display: flex;
     margin-left: 45%;
     width: 50px;
@@ -60,4 +60,10 @@
     margin-left: 20%;
     margin-top: 3%;
     font-size: 1vw;
+}
+
+@media only screen and (max-width: 768px) {
+    .Card {
+        width: 30px; /* Уменьшение размера картинки на мобильных устройствах */
+    }
 }

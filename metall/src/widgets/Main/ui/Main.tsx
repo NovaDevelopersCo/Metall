@@ -13,9 +13,9 @@ const Main = () => {
       <div className={style.container}>
         <img className={style.ImgMetall} src="./assets/metallchell1.png" alt="Metallchell1" />
         <div className={style.contTxt}>
-          <button className={style.button}>Заказать звонок</button>
           <h3 className={style.Text}>Металлопрокат высочайшего качества</h3>
           <h2 className={style.H2Text}>Надежные поставки, оперативная доставка и гарантированное качество для вашего успешного проекта. Работаем оптом и в розницу.</h2>
+          <button className={style.button}>Заказать звонок</button>
         </div>
       </div>
       <div className={style.Cont}>

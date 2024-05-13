@@ -46,6 +46,10 @@
     font-size: 1vw;
   }
 
+  .Map{
+    display: inline-block;
+  }
+
   .button{
     display: flex;
     position: relative; 
@@ -63,18 +67,17 @@
   }
   .button1 {
     display: flex;
-    position: relative; 
+    position: relative;
     margin-top: 1em;
-    margin-right: 1em;
-    transform: translate(-50%, -50%); 
-    padding: 1em 2em; 
+    transform: translate(-50%, -50%);
+    padding: 1em 2em;
     font-size: 0.8vw;
     border: none;
     border-radius: 10px;
     background-color: #ffc107;
     color: #000;
     font-weight: bold;
-    transition: background-color 0.3s ease, color 0.3s ease; 
+    transition: background-color 0.3s ease, color 0.3s ease;
   }
   
   .button1 {
@@ -92,5 +95,40 @@
   .button1:active {
     background-color: #646161; 
     color: #000; 
+  }
+  
+
+  @media only screen and (max-width: 768px) {
+    .container{
+      width: 100%;
+    }
+
+    .title{
+      font-size: 2vw;
+    }
+
+    .Glava{
+      font-size: 2vw;
+    }
+
+    .Text {
+      font-size: 4vw; /* Увеличен размер текста */
+    }
+  
+    .H2Text {
+      font-size: 2.5vw; /* Увеличен размер заголовка */
+    }
+
+    .Map{
+      width: 100%;
+      height: 20%;
+    }
+
+    .button1 {
+      margin-left: auto; /* Удален фиксированный отступ */
+      margin-right: auto; /* Удален фиксированный отступ */
+      margin-top: -3.6em; 
+    }
+  
   }
   

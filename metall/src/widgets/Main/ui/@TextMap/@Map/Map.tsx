@@ -8,6 +8,7 @@ const Map = () => {
         <h3 className={style.title}>Наш адрес</h3>
         <div className={style.map}>
           <iframe
+            className={style.Map}
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2335.089124984971!2d37.78175376105619!3d55.71847203842065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414ab577b7e02c77%3A0x46d95bed5b2d3935!2z0KDRj9C30LDQvdGB0LrQuNC5INC_0YAuLCDQnNC-0YHQutCy0LAsINCg0L7RgdGB0LjRjw!5e1!3m2!1sru!2str!4v1715542665433!5m2!1sru!2str"
             width="100%"
             height="400"
