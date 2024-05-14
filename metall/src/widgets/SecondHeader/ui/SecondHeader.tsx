@@ -1,5 +1,6 @@
 import styles from './SecondHeader.module.scss'
-import { Search } from 'lucide-react'
+import Basket from '@/shared/ui/icons/Basket'
+import Search from '@/shared/ui/icons/Search'
 
 const SecondHeader = () => {
 	return (
@@ -19,12 +20,25 @@ const SecondHeader = () => {
 					<li>
 						<a href='#'>Контакты</a>
 					</li>
-
+					<div className={styles.icons}>
+						<a href='#'>
+							<img
+								className={styles.telegram}
+								src='/telegram.png'
+								alt='telegram'
+							/>
+						</a>
+						<a href='#'>
+							<img src='/whatup.png' alt='whatup' />
+						</a>
+					</div>
 					<div className={styles.search}>
 						<input placeholder='Поиск в каталоге...' type='text' />
 						<Search />
 					</div>
-					<img src='./icons/telegram.png' alt='telegram' />
+					<button className={styles.basket}>
+						<Basket />
+					</button>
 				</ul>
 			</nav>
 		</header>

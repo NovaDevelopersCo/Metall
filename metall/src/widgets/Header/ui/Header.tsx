@@ -1,5 +1,5 @@
 import styles from './Header.module.scss'
-import { Clock3, MapPin } from 'lucide-react'
+import { Clock3, MapPin } from 'lucide-react' /* Лучше это убери , мыэто не юзаем , бери с шаблона иконки  */
 
 const Header = () => {
 	return (

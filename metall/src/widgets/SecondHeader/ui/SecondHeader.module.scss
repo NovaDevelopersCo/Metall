@@ -13,12 +13,13 @@
 	margin: 0 auto;
 }
 .menu {
-	@apply flex gap-2 flex-nowrap items-center justify-between w-full font-bold;
+	@apply flex gap-2 flex-nowrap items-center justify-between w-full;
+	font-weight: 600;
 }
 
 .search {
 	@apply flex font-medium;
-	border-bottom: 1px solid black;
+	border-bottom: 2px solid black;
 	border-radius: 10px;
 	font-size: 14px;
 	input {
@@ -35,12 +36,25 @@
 		font-weight: normal;
 	}
 	svg {
+		@apply font-bold h-[18px] w-[18px];
 		margin: 10px;
-		height: 18px;
-		width: 18px;
 	}
 }
 .logo {
 	@apply text-[30px] font-bold;
 	line-height: 36px;
+}
+.icons {
+	display: flex;
+	gap: 1rem;
+}
+.telegram {
+	width: 27px;
+	height: 27px;
+}
+
+.basket {
+	padding: 12px;
+	border: 1px solid black;
+	border-radius: 25px;
 }
