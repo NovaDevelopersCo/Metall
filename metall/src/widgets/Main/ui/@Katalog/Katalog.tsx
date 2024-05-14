@@ -10,18 +10,18 @@ export const Katalog = () => {
     <div key={index} className={style.card}>
       <img  className={style.cardImage} />
         <div className={style.cardContainer}>
-          <img src="/assets/armatura.png" alt="Перейти" className={style.buttonImage} />
-          <img src="/assets/balka.png" alt="Перейти" className={style.buttonImage} />
-          <img src="/assets/katanka.png" alt="Перейти" className={style.buttonImage} />
-          <img src="/assets/krug.png" alt="Перейти" className={style.buttonImage} />
-          <img src="/assets/list.png" alt="Перейти" className={style.buttonImage} />
-          <img src="/assets/polosa.png" alt="Перейти" className={style.buttonImage} />
-          <img src="/assets/proflist.png" alt="Перейти" className={style.buttonImage} />
-          <img src="/assets/shveller.png" alt="Перейти" className={style.buttonImage} />
-          <img src="/assets/square.png" alt="Перейти" className={style.buttonImage} />
-          <img src="/assets/trub.png" alt="Перейти" className={style.buttonImage} />
-          <img src="/assets/ugolok.png" alt="Перейти" className={style.buttonImage} />
-          <img src="/assets/slugi.png" alt="Перейти" className={style.buttonImageH} />
+          <img src="/assets/1.png" alt="Перейти" className={style.buttonImage} />
+          <img src="/assets/Katanka1.png" alt="Перейти" className={style.buttonImage} />
+          <img src="/assets/2.png" alt="Перейти" className={style.buttonImage} />
+          <img src="/assets/3.png" alt="Перейти" className={style.buttonImage} />
+          <img src="/assets/4.png" alt="Перейти" className={style.buttonImage} />
+          <img src="/assets/5.png" alt="Перейти" className={style.buttonImage} />
+          <img src="/assets/6.png" alt="Перейти" className={style.buttonImage} />
+          <img src="/assets/77.png" alt="Перейти" className={style.buttonImage} />
+          <img src="/assets/8.png" alt="Перейти" className={style.buttonImage} />
+          <img src="/assets/9.png" alt="Перейти" className={style.buttonImage} />
+          <img src="/assets/10.png" alt="Перейти" className={style.buttonImage} />
+          <img src="/assets/11.png" alt="Перейти" className={style.buttonImageH} />
         </div>
     </div>
   ));
