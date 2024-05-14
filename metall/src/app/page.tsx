@@ -1,7 +1,9 @@
-import Footer from "@/widgets/Footer/ui/Footer";
+import { SecondHeader } from '@/widgets/SecondHeader'
 
 export default function Home() {
-  return (
-    <Footer />
-  );
+	return (
+		<main>
+			<SecondHeader />
+		</main>
+	)
 }
