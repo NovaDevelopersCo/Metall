@@ -1,7 +1,9 @@
 .secondHeader {
-	@apply text-[#0D0D0D] w-full font-bold bg-white;
+	@apply text-[#0D0D0D] w-full bg-white;
+	position: fixed;
+	top: 70px;
 	line-height: 19px;
-	padding: 22px;
+	padding: 35px;
 	box-shadow: 0px 6px 6px rgba(207, 207, 207, 0.06);
 }
 
@@ -11,5 +13,34 @@
 	margin: 0 auto;
 }
 .menu {
-	@apply flex gap-2 flex-nowrap items-center justify-between;
+	@apply flex gap-2 flex-nowrap items-center justify-between w-full font-bold;
+}
+
+.search {
+	@apply flex font-medium;
+	border-bottom: 1px solid black;
+	border-radius: 10px;
+	font-size: 14px;
+	input {
+		padding: 10px;
+		outline: none;
+		input:focus,
+		:focus-visible {
+			border: none;
+			outline: none;
+		}
+	}
+	:-ms-input-placeholder {
+		font-size: 14px;
+		font-weight: normal;
+	}
+	svg {
+		margin: 10px;
+		height: 18px;
+		width: 18px;
+	}
+}
+.logo {
+	@apply text-[30px] font-bold;
+	line-height: 36px;
 }
