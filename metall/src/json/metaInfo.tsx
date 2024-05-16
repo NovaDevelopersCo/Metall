@@ -1,68 +1,51 @@
+import armatura from '/public/image/armatura.png';
+import katakana from '../public/image/katakana.png';
+import krug from '../public/image/krug.png';
+import trubi from '../public/image/trubi.png';
 
-export interface MetallInfo {
-  title: string;
-  price: number;
-  imageUrl: string;
-  sizes: number[];
-  types: number[];
-}
-
-export const MetaInfo: MetallInfo[] = [
+export const MetaInfo: MetaInfo[] = [
   {
-    title: "Металл 1",
-    price: 100,
-    imageUrl: "/images/metall1.jpg",
-    sizes: [10, 20, 30],
-    types: [0, 1]
+    title: "Арматура",
+    imageUrl: armatura,
   },
   {
-    title: "Металл 2",
-    price: 150,
+    title: "Катанка",
+    imageUrl: "public/images/katakana.png",
+  },
+  {
+    title: "Круг",
+    imageUrl: "public/images/krug.png",
+  },
+  {
+    title: "Трубы",
+    imageUrl: "public/images/trubi.png",
+  },
+  {
+    title: "Балка",
     imageUrl: "/images/metall2.jpg",
-    sizes: [15, 25, 35],
-    types: [0, 1]
   },
   {
-    title: "Металл 2",
-    price: 150,
+    title: "Листы",
     imageUrl: "/images/metall2.jpg",
-    sizes: [15, 25, 35],
-    types: [0, 1]
   },
   {
-    title: "Металл 2",
-    price: 150,
+    title: "Квадрат",
     imageUrl: "/images/metall2.jpg",
-    sizes: [15, 25, 35],
-    types: [0, 1]
   },
   {
-    title: "Металл 2",
-    price: 150,
+    title: "Полоса",
     imageUrl: "/images/metall2.jpg",
-    sizes: [15, 25, 35],
-    types: [0, 1]
   },
   {
-    title: "Металл 2",
-    price: 150,
+    title: "Швеллер",
     imageUrl: "/images/metall2.jpg",
-    sizes: [15, 25, 35],
-    types: [0, 1]
   },
   {
-    title: "Металл 2",
-    price: 150,
+    title: "Уголок",
     imageUrl: "/images/metall2.jpg",
-    sizes: [15, 25, 35],
-    types: [0, 1]
   },
   {
-    title: "Металл 2",
-    price: 150,
+    title: "Профлист",
     imageUrl: "/images/metall2.jpg",
-    sizes: [15, 25, 35],
-    types: [0, 1]
   },
-  // Добавьте больше металлов по вашему усмотрению
 ];
