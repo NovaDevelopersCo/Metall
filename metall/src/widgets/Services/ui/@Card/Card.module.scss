@@ -1,10 +1,13 @@
 .CardBox{
-width: 1140px;
-height: 444px;
-margin: 0 auto;
-border-radius: 10px;
-padding: 40px;
-box-shadow: 0px 12px 26px 0px rgba(158, 158, 158, 0.1),0px 48px 48px 0px rgba(158, 158, 158, 0.09),0px 107px 64px 0px rgba(158, 158, 158, 0.05),0px 191px 76px 0px rgba(158, 158, 158, 0.01),0px 298px 83px 0px rgba(158, 158, 158, 0);
+    position: relative;
+    z-index: 2;
+    margin: 0 auto;
+    width: 1140px;
+    height: 444px;
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0px 12px 26px 0px rgba(158, 158, 158, 0.1),0px 48px 48px 0px rgba(158, 158, 158, 0.09),0px 107px 64px 0px rgba(158, 158, 158, 0.05),0px 191px 76px 0px rgba(158, 158, 158, 0.01),0px 298px 83px 0px rgba(158, 158, 158, 0);
+    background: rgb(255, 255, 255);
 }
 .Card h3{
     color: #000;
@@ -32,3 +35,19 @@ box-shadow: 0px 12px 26px 0px rgba(158, 158, 158, 0.1),0px 48px 48px 0px rgba(15
     height: 215px;
     margin-left: 78px;
 }
+.Number {
+    background: linear-gradient(171.56deg, rgb(255, 215, 97), rgb(255, 224, 132), rgba(255, 255, 255, 0));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-size: 162px;
+    font-weight: 700;
+    line-height: 190px;
+    letter-spacing: 0%;
+    text-align: center;
+    font-style: oblique;
+    position: absolute;
+    top: -29%;
+    z-index: 1;
+    right: 12%;
+  }
