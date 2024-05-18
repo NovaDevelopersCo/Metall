@@ -13,7 +13,7 @@
     margin: 0 auto;
     position: relative;
     display: grid;
-    gap: 240px;
+    gap: 200px;
 }
 .Card{
     position: relative;
@@ -21,4 +21,9 @@
 }
 .Arrow{
     margin: 61px 0 43px 0;
+}
+@media (max-width: 1200px) {
+  .Services {
+    margin: 0 30px;
+  }
 }

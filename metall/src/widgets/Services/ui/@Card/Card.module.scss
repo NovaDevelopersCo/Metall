@@ -2,8 +2,6 @@
     position: relative;
     z-index: 2;
     margin: 0 auto;
-    width: 1140px;
-    height: 444px;
     border-radius: 10px;
     padding: 40px;
     box-shadow: 0px 12px 26px 0px rgba(158, 158, 158, 0.1),0px 48px 48px 0px rgba(158, 158, 158, 0.09),0px 107px 64px 0px rgba(158, 158, 158, 0.05),0px 191px 76px 0px rgba(158, 158, 158, 0.01),0px 298px 83px 0px rgba(158, 158, 158, 0);
@@ -51,3 +49,30 @@
     z-index: 1;
     right: 12%;
   }
+@media (max-width: 1200px) {
+   .Card h3{
+    font-size: 24px;
+    line-height: 30px;
+   }
+   .Card p{
+    font-size: 18px;
+    line-height: 24px;
+   }
+   .Card img{
+    width: 342px;
+    height: 150px;
+    margin-left: 20px;
+   }
+   .Number {
+    font-size: 115px;
+    line-height: 140px;
+  }
+}
+  @media (max-width: 800px) {
+   .Describe{
+    flex-direction: column;
+    gap: 40px;
+    margin-bottom: 40px;
+    align-items: center;
+   }
+}

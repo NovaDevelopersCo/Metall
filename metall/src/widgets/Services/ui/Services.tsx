@@ -72,8 +72,8 @@ const Services = () => {
 
   return (
     <div className={styles.Services}>
-      <p className={styles.ServicesTitle}>Услуги</p>
       <div className={styles.CardsContent}>
+        <p className={styles.ServicesTitle}>Услуги</p>
         {cardsData.map((cardData, index) => (
           <div key={index} className={styles.Card}>
             <Card
