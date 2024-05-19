@@ -39,54 +39,54 @@ const CallModal: React.FC = () => {
 			<Button type='primary' onClick={showModal}>
 				Open Modal
 			</Button>
-            {isSubmitted ? (
-                <Modal
-                title='Звонок успешно заказан'
-                open={isModalOpen}
-				onOk={handleOk}
-				onCancel={handleCancel}
-				footer={_ => <></>}
-                >
-                    <button>Закрыть</button>
-                </Modal>
-            ) : (
-                <Modal
-				title='Заказать звонок'
+			<Modal
+				title={isSubmitted ? 'Вы заказали звонок' : 'Заказать звонок'}
 				open={isModalOpen}
 				onOk={handleOk}
 				onCancel={handleCancel}
-				footer={_ => <></>}
-			    >
-			        <form onSubmit={handleSubmit}>
-			            <Input
-			            	placeholder='Ваше имя'
-			            	value={name}
-			            	onChange={e => setName(e.target.value)}
-                            style={{ width: 350 }}
-			            />
-			            <br />
-			            <Input
-                            addonBefore={
-                              <Select
-                                value={countryCode}
-                                onChange={setCountryCode}
-                                style={{ width: 75 }}
-                              >
-                                <Option value="+1">+1</Option>
-                                <Option value="+7">+7</Option>
-                                <Option value="+380">+380</Option>
-                              </Select>
-                            }
-                            placeholder="555 555-1234"
-                            value={phone}
-                            onChange={(e) => setPhone(e.target.value)}
-                            style={{ width: 350 }}
-                        />
-			            <br />
-			            <button type='submit'>Отправить</button>
-			        </form>
-			    </Modal>
-            )}
+				footer={null}
+				centered
+			>
+				{isSubmitted ? (
+					<div style={{ textAlign: 'center' }}>
+						<div>Спасибо за Вашу заявку.<br/> В ближайшее время наш специалист свяжется с вами.</div>
+						<Button type='primary' onClick={handleCancel} style={{ marginTop: '20px' }}>
+							Закрыть
+						</Button>
+					</div>
+				) : (
+					<form onSubmit={handleSubmit} style={{ textAlign: 'center' }}>
+						<Input
+							placeholder='Ваше имя'
+							value={name}
+							onChange={e => setName(e.target.value)}
+							style={{ width: '100%', maxWidth: '350px', marginBottom: '10px' }}
+						/>
+						<br />
+						<Input
+							addonBefore={
+								<Select
+									value={countryCode}
+									onChange={setCountryCode}
+									style={{ width: '75px' }}
+								>
+									<Option value='+1'>+1</Option>
+									<Option value='+7'>+7</Option>
+									<Option value='+380'>+380</Option>
+								</Select>
+							}
+							placeholder='555 555-1234'
+							value={phone}
+							onChange={e => setPhone(e.target.value)}
+							style={{ width: '100%', maxWidth: '350px', marginBottom: '10px' }}
+						/>
+						<br />
+						<button>
+                            Отправить
+                        </button>
+					</form>
+				)}
+			</Modal>
 		</>
 	)
 }
