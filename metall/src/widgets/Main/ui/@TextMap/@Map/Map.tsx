@@ -9,7 +9,7 @@ const Map = () => {
         <div className={style.map}>
           <iframe
             className={style.Map}
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2335.089124984971!2d37.78175376105619!3d55.71847203842065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414ab577b7e02c77%3A0x46d95bed5b2d3935!2z0KDRj9C30LDQvdGB0LrQuNC5INC_0YAuLCDQnNC-0YHQutCy0LAsINCg0L7RgdGB0LjRjw!5e1!3m2!1sru!2str!4v1715542665433!5m2!1sru!2str"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d280.86514869543015!2d37.759870491611046!3d55.72512176998222!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414ab56ef24d8e51%3A0x27fb75fff1cc7ffb!2z0JHQpiDCq9Cl0LDQvNC10LvQtdC-0L3Cuw!5e0!3m2!1sru!2sua!4v1716117764017!5m2!1sru!2sua"
             width="100%"
             height="400"
             frameBorder="0"
