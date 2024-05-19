@@ -1,134 +1,135 @@
 .container {
-    display: flex;
-  }
-  
-  .left {
-    flex: 1;
-    padding: 20px;
-  }
-  
-  .right {
-    flex: 1;
-    padding: 20px;
-  }
-  
-  .map {
-    margin-top: 5%;
-  }
-  
-  .contactinfo {
-    text-align: left;
-  }
+	display: flex;
+}
 
-  .contacttitle{
-    margin-top: 20%;
-    color: #F4C024;
-    font-size: 1.5vw;
-    font-weight: bold;
-  }
-  
-  .title {
-    margin-top: 5%;
-    font-size: 1.5vw;
-    font-weight: bold;
-    margin-left: 10%;
-  }
+.left {
+	flex: 1;
+	padding: 20px;
+}
 
-  .Glava{
-    font-size: 1.5vw;
-    font-weight: bold;
-    margin-top: 2%;
-    font-size: 1vw;
-  }
+.right {
+	flex: 1;
+	padding: 20px;
+}
 
-  .text{
-    margin-top: 1%;
-    font-size: 1vw;
-  }
+.map {
+	margin-top: 5%;
+}
 
-  .Map{
-    display: inline-block;
-  }
+.contactinfo {
+	text-align: left;
+}
 
-  .button{
-    display: flex;
-    position: relative; 
-    margin-top: 10%;
-    margin-left: 10%;
-    transform: translate(-50%, -50%); 
-    padding: 1em 2em; 
-    border: none;
-    font-size: 0.8vw;
-    border-radius: 10px;
-    background-color: #ffc107;
-    color: #000;
-    font-weight: bold;
-    transition: background-color 0.3s ease, color 0.3s ease; 
-  }
-  .button1 {
-    display: flex;
-    position: relative;
-    margin-top: 1em;
-    transform: translate(-50%, -50%);
-    padding: 1em 2em;
-    font-size: 0.8vw;
-    border: none;
-    border-radius: 10px;
-    background-color: #ffc107;
-    color: #000;
-    font-weight: bold;
-    transition: background-color 0.3s ease, color 0.3s ease;
-  }
-  
-  .button1 {
-    margin-top: -3.5em; 
-    margin-left: 20em;
-  }
-  
-  .button:hover,
-  .button1:hover {
-    background-color: #fff; 
-    color: #000; 
-  }
-  
-  .button:active,
-  .button1:active {
-    background-color: #646161; 
-    color: #000; 
-  }
-  
+.contacttitle {
+	margin-top: 20%;
+	color: #f4c024;
+	font-size: 1.5vw;
+	font-weight: bold;
+}
 
-  @media only screen and (max-width: 768px) {
-    .container{
-      width: 100%;
-    }
+.title {
+	margin-top: 5%;
+	font-size: 1.5vw;
+	font-weight: bold;
+	margin-left: 10%;
+}
 
-    .title{
-      font-size: 2vw;
-    }
+.Glava {
+	font-size: 1.5vw;
+	font-weight: bold;
+	margin-top: 2%;
+	font-size: 1vw;
+}
 
-    .Glava{
-      font-size: 2vw;
-    }
+.text {
+	margin-top: 1%;
+	font-size: 1vw;
+}
 
-    .Text {
-      font-size: 4vw; /* Увеличен размер текста */
-    }
-  
-    .H2Text {
-      font-size: 2.5vw; /* Увеличен размер заголовка */
-    }
+.Map {
+	display: inline-block;
+}
 
-    .Map{
-      width: 100%;
-      height: 20%;
-    }
+.button {
+	display: flex;
+	position: relative;
+	margin-top: 10%;
+	margin-left: 10%;
+	transform: translate(-50%, -50%);
+	padding: 1em 2em;
+	border: none;
+	font-size: 0.8vw;
+	border-radius: 10px;
+	background-color: #ffc107;
+	color: #000;
+	font-weight: bold;
+	transition:
+		background-color 0.3s ease,
+		color 0.3s ease;
+}
+.button1 {
+	display: flex;
+	position: relative;
+	margin-top: 1em;
+	transform: translate(-50%, -50%);
+	padding: 1em 2em;
+	font-size: 0.8vw;
+	border: none;
+	border-radius: 10px;
+	background-color: #ffc107;
+	color: #000;
+	font-weight: bold;
+	transition:
+		background-color 0.3s ease,
+		color 0.3s ease;
+}
 
-    .button1 {
-      margin-left: auto; /* Удален фиксированный отступ */
-      margin-right: auto; /* Удален фиксированный отступ */
-      margin-top: -3.6em; 
-    }
-  
-  }
-  
+.button1 {
+	margin-top: -3.5em;
+	margin-left: 20em;
+}
+
+.button:hover,
+.button1:hover {
+	background-color: #fff;
+	color: #000;
+}
+
+.button:active,
+.button1:active {
+	background-color: #646161;
+	color: #000;
+}
+
+@media only screen and (max-width: 768px) {
+	.container {
+		width: 100%;
+	}
+
+	.title {
+		font-size: 2vw;
+	}
+
+	.Glava {
+		font-size: 2vw;
+	}
+
+	.Text {
+		font-size: 4vw; /* Увеличен размер текста */
+	}
+
+	.H2Text {
+		font-size: 2.5vw; /* Увеличен размер заголовка */
+	}
+
+	.Map {
+		width: 100%;
+		height: 20%;
+	}
+
+	.button1 {
+		margin-left: auto; /* Удален фиксированный отступ */
+		margin-right: auto; /* Удален фиксированный отступ */
+		margin-top: -3.6em;
+	}
+}

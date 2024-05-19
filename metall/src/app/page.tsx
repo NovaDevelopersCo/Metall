@@ -1,7 +1,11 @@
-import Main from "@/widgets/Main/ui/Main";
+import { CallModal } from '@/entities'
+import Main from '@/widgets/Main/ui/Main'
 
 export default function Home() {
-  return (
-    <Main/>
-  );
+	return (
+		<>
+			<Main />
+			<CallModal />
+		</>
+	)
 }

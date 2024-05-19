@@ -1,9 +1,9 @@
-import { NotFoundwid } from "@/widgets/NotFoundwid";
+import { NotFoundwid } from '@/widgets/NotFoundwid'
 
 export default function NotFound() {
-    return (
-      <>
-        <NotFoundwid />
-      </>
-    )
+	return (
+		<>
+			<NotFoundwid />
+		</>
+	)
 }

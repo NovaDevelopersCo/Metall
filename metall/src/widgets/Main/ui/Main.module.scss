@@ -1,153 +1,158 @@
 .container {
-  position: relative;
-  width: 100%;
-  margin: 0 auto;
+	position: relative;
+	width: 100%;
+	margin: 0 auto;
 }
 
 .ImgMetall {
-  width: 100%;
+	width: 100%;
 }
 
 .contTxt {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 80%;
-  z-index: 1;
-  color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 80%;
+	z-index: 1;
+	color: white;
 }
 
 .Text {
-  width: 100%;
-  font-size: 2vw;
-  font-weight: bold;
-  padding-right: 20%;
+	width: 100%;
+	font-size: 2vw;
+	font-weight: bold;
+	padding-right: 20%;
 }
 
 .H2Text {
-  width: 50%;
-  font-size: 1.5vw;
-  margin-top: 1%;
-  opacity: 1;
+	width: 50%;
+	font-size: 1.5vw;
+	margin-top: 1%;
+	opacity: 1;
 }
 
 .button {
-  display: inline-block;
-  margin-top: 2%;
-  margin-left: -0.1%; 
-  padding: 1em 2em; 
-  border: none;
-  font-size: 0.7em; 
-  border-radius: 10px;
-  background-color: #ffc107;
-  color: #000;
-  font-weight: bold;
-  transition: background-color 0.3s ease, color 0.3s ease;
+	display: inline-block;
+	margin-top: 2%;
+	margin-left: -0.1%;
+	padding: 1em 2em;
+	border: none;
+	font-size: 0.7em;
+	border-radius: 10px;
+	background-color: #ffc107;
+	color: #000;
+	font-weight: bold;
+	transition:
+		background-color 0.3s ease,
+		color 0.3s ease;
 }
 
 .button:hover {
-  background-color: #fff;
-  color: #000;
+	background-color: #fff;
+	color: #000;
 }
 
 .button:active {
-  background-color: #646161;
-  color: #000;
+	background-color: #646161;
+	color: #000;
 }
 
 .cardicon {
-  width: 13%;
-  margin: auto;
-  margin-bottom: 30px;
-  margin-top: 20px;
+	width: 13%;
+	margin: auto;
+	margin-bottom: 30px;
+	margin-top: 20px;
 }
 
 .Card1 h3,
 .Card2 h3,
 .Card3 h3 {
-  color: #f4c024;
-  margin-top: 20px;
-  font-size: 20px;
+	color: #f4c024;
+	margin-top: 20px;
+	font-size: 20px;
 }
 
 .Card1 p,
 .Card2 p,
 .Card3 p {
-  margin-top: 10px;
-  text-align: center;
+	margin-top: 10px;
+	text-align: center;
 }
 
 .Cont {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  padding: 20px;
-  margin: -70px auto 0;
-  max-width: 100%;
-  gap: 20px;
-  border-radius: 10px;
-  position: relative;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	padding: 20px;
+	margin: -70px auto 0;
+	max-width: 100%;
+	gap: 20px;
+	border-radius: 10px;
+	position: relative;
 }
 
 .cardContainer {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+	justify-content: center;
 }
 
 .Card1,
 .Card2,
 .Card3 {
-  flex: 1 1 calc(33.333% - 40px);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  width: 100%;
-  max-width: 400px;
-  border-radius: 10px;
-  background-color: rgba(255, 255, 255, 1);
-  padding: 20px;
+	flex: 1 1 calc(33.333% - 40px);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+	width: 100%;
+	max-width: 400px;
+	border-radius: 10px;
+	background-color: rgba(255, 255, 255, 1);
+	padding: 20px;
 }
 
 @media only screen and (max-width: 768px) {
-  .contTxt {
-    width: 100%;
-    text-align: center;
-    align-items: center;
-    padding: 0;
-  }
+	.contTxt {
+		width: 100%;
+		text-align: center;
+		align-items: center;
+		padding: 0;
+	}
 
-  .Text, .H2Text {
-    font-size: 2vw;
-    padding-right: 0;
-  }
+	.Text,
+	.H2Text {
+		font-size: 2vw;
+		padding-right: 0;
+	}
 
-  .button {
-    font-size: 1.5vw; /* Уменьшен размер шрифта кнопки */
-    padding: 1em 2em; /* Уменьшен размер кнопки */
-    margin-top: 3%; /* Изменено расположение кнопки */
-    margin-left: -5%; /* Убран отступ слева */
-  }
+	.button {
+		font-size: 1.5vw; /* Уменьшен размер шрифта кнопки */
+		padding: 1em 2em; /* Уменьшен размер кнопки */
+		margin-top: 3%; /* Изменено расположение кнопки */
+		margin-left: -5%; /* Убран отступ слева */
+	}
 
-  .cardContainer {
-    flex-direction: column;
-  }
+	.cardContainer {
+		flex-direction: column;
+	}
 
-  .Card1{
-    margin-top: 100px;
-  }
+	.Card1 {
+		margin-top: 100px;
+	}
 
-  .Card1, .Card2, .Card3 {
-    flex: 1 1 100%;
-    max-width: none;
-  }
+	.Card1,
+	.Card2,
+	.Card3 {
+		flex: 1 1 100%;
+		max-width: none;
+	}
 }
