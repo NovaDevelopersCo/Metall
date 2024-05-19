@@ -22,10 +22,12 @@ export default function RootLayout({
 		<html lang='ru'>
 			<body className={inter.className}>
 				<AppProvider>
-					<Header/>
-					<SecondHeader/>
+					<div className='stincky top-0 z-50'>
+						<Header/>
+						<SecondHeader/>
+					</div>
 					{children}
-					<Footer/>
+					<div className='stincky bottom-0 z-50'><Footer/></div>
 				</AppProvider>
 			</body>
 		</html>
