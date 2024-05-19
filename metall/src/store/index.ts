@@ -1,6 +1,5 @@
-import { configureStore } from '@reduxjs/toolkit'
-
 import StoreProvider from './ui/StoreProvider'
+import { configureStore } from '@reduxjs/toolkit'
 
 export const makeStore = () => {
 	return configureStore({
