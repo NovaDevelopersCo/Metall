@@ -1,2 +1,3 @@
-import { MetallBlock } from "./metallBlock";
-export { MetallBlock } 
+import { MetallBlock } from './metallBlock'
+
+export { MetallBlock }

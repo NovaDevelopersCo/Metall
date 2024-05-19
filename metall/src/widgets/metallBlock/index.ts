@@ -1,2 +1,3 @@
-import  MetallBlock from "./metallBlock";
+import MetallBlock from './metallBlock'
+
 export { MetallBlock }
