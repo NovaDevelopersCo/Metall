@@ -4,7 +4,7 @@ import Breadcrumbs from "@/shared/ui/Breadcrumbs/Breadcrumbs";
 import Contacts from "@/widgets/ui/Contacts/Contacts";
 import MapLocation from "@/widgets/ui/MapLocation/MapLocation";
 import Feedback from "@/widgets/ui/Feedback/Feedback";
-
+import { MetaInfo } from '@/json/metaInfo';
 
 // const breadcrumbsData: BreadcrumbItem[] = [
 //   { text: 'Главная', href: '/' },
@@ -14,7 +14,7 @@ import Feedback from "@/widgets/ui/Feedback/Feedback";
 export default function Home() {
   return (
     <>
-      
+      <MetallBlock metallInfo={MetaInfo}/>
     </>
   );
 }

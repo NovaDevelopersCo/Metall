@@ -1,7 +1,7 @@
 'use client'
 import React from 'react';
 import styles from "./metallBlock.module.scss"
-
+import Button from "@/shared/ui/Button/metaButton"
 interface MetallBlockProps {
   metallInfo: {
     title: string;
@@ -16,27 +16,25 @@ const MetallBlock: React.FC<MetallBlockProps> = ({ metallInfo }) => {
   };
 
   return (
-<div>
+    <div>
       <div className={styles.catalogHeader}>
         <h1 className={styles.catalogTitle}>КАТАЛОГ ТОВАРОВ МЕТАЛЛОПРОКАТА</h1>
         <button className={styles["list-button"]} onClick={() => console.log("Скачать прайс-лист")}>
           Скачать прайс-лист
         </button>
       </div>
-    <div className={styles["card-container"]}>
-      {metallInfo.map((metall, index) => (
-        <div key={index} className={styles.card}>
-          <img className={styles["card-image"]} src={metall.imageUrl} alt="metall" />
-          <div className={styles["card-overlay"]}></div>
-          <div className={styles["card-content"]}>
-            <h4 className={styles["card-title"]}>{metall.title}</h4>
-            <button className={styles["card-button"]} onClick={() => onClickAdd(metall)}>
-              {'>'}
-            </button>
+      <div className={styles["card-container"]}>
+        {metallInfo.map((metall, index) => (
+          <div key={index} className={styles.card}>
+            <img className={styles["card-image"]} src={metall.imageUrl} alt="photo" />
+            <div className={styles["card-overlay"]}></div>
+            <div className={styles["card-content"]}>
+              <h4 className={styles["card-title"]}>{metall.title}</h4>
+<Button/>
+            </div>
           </div>
-        </div>
-      ))}
-    </div>
+        ))}
+      </div>
     </div>
 
   );

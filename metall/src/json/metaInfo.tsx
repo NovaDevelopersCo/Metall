@@ -1,51 +1,58 @@
-import armatura from '/public/image/armatura.png';
-import katakana from '../public/image/katakana.png';
-import krug from '../public/image/krug.png';
-import trubi from '../public/image/trubi.png';
+import armatura from '@/../public/image/armatura.png';
+import katanka from '@/../public/image/katanka.png';
+import krug from '@/../public/image/krug.png';
+import trubi from '@/../public/image/trubi.png';
+import balka from '@/../public/image/balka.png';
+import list from '@/../public/image/listi.png';
+import kvadrat from '@/../public/image/kvadrat.png';
+import polosi from '@/../public/image/polosi.png';
+import shveller from '@/../public/image/shveller.png';
+import ugolok from '@/../public/image/ugolok.png';
+import proflist from '@/../public/image/proflist.png';
 
 export const MetaInfo: MetaInfo[] = [
   {
     title: "Арматура",
-    imageUrl: armatura,
+    imageUrl: armatura.src,
   },
   {
     title: "Катанка",
-    imageUrl: "public/images/katakana.png",
+    imageUrl: katanka.src,
   },
   {
     title: "Круг",
-    imageUrl: "public/images/krug.png",
+    imageUrl: krug.src,
   },
   {
     title: "Трубы",
-    imageUrl: "public/images/trubi.png",
+    imageUrl: trubi.src,
   },
   {
     title: "Балка",
-    imageUrl: "/images/metall2.jpg",
+    imageUrl: balka.src,
   },
   {
     title: "Листы",
-    imageUrl: "/images/metall2.jpg",
+    imageUrl: list.src,
   },
   {
     title: "Квадрат",
-    imageUrl: "/images/metall2.jpg",
+    imageUrl: kvadrat.src,
   },
   {
     title: "Полоса",
-    imageUrl: "/images/metall2.jpg",
+    imageUrl: polosi.src,
   },
   {
     title: "Швеллер",
-    imageUrl: "/images/metall2.jpg",
+    imageUrl: shveller.src,
   },
   {
     title: "Уголок",
-    imageUrl: "/images/metall2.jpg",
+    imageUrl: ugolok.src,
   },
   {
     title: "Профлист",
-    imageUrl: "/images/metall2.jpg",
+    imageUrl: proflist.src,
   },
 ];

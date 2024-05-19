@@ -18,6 +18,9 @@
   height: 100%;
   object-fit: cover;
   border-radius: 10px;
+  max-height: 196px;
+  max-width: 133px;
+
 }
 
 .card-overlay {
@@ -43,18 +46,7 @@
   margin-bottom: 0.5rem;
 }
 
-.card-button {
-  position: absolute;
-  bottom: -0.2rem;
-  right: -0.2rem;
-  width: 60px;
-  height: 50px;
-  padding: 0.5rem;
-  color: black;
-  background-color: #F4C024;
-  border-radius: 10px;
-  overflow: hidden;
-}
+
 .catalogHeader {
   display: flex;
   align-items: center;
