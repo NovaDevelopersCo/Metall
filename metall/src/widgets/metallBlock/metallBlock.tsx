@@ -3,6 +3,7 @@
 import styles from './metallBlock.module.scss'
 import Button from '@/shared/ui/Button/metaButton'
 import React from 'react'
+import Footer from './metaFooter'
 
 interface MetallBlockProps {
 	metallInfo: {
@@ -47,7 +48,9 @@ const MetallBlock: React.FC<MetallBlockProps> = ({ metallInfo }) => {
 					</div>
 				))}
 			</div>
+			<Footer/>
 		</div>
+		
 	)
 }
 
