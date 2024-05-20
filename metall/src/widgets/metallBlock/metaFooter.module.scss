@@ -9,28 +9,31 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  .leftText {
+    width: 600px; 
+    margin-bottom: 50px; 
+  }
+  .orderCallButton {
+    background-color: #f4c024;
+    border-radius: 10px;
+    width: 130px;
+    height: 40px; 
+    color: black;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap; 
+    margin-left: 200px;
+  }
+  margin-left: 4vw;
 }
 
-.leftText {
-  width: 600px; 
-  margin-bottom: 50px; 
-}
 
-.orderCallButton {
-  background-color: #f4c024;
-  border-radius: 10px;
-  width: 130px;
-  height: 40px; 
-  color: black;
-  border: none;
-  cursor: pointer;
-  font-weight: bold;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  white-space: nowrap; 
-  margin-left: 200px;
-}
+
+
 
 .rightContainer {
   display: flex;
@@ -39,17 +42,17 @@
   text-align: right;
   font-weight: bold;
   width: 600px; 
-
-}
-
-.rightText {
-  color: black;
-  font-size: 28px; 
-  margin-top: 150px;
-  .highlightText {
-    color: #f4c024;
-    display: block;
-
+  .rightText {
+    color: black;
+    font-size: 28px; 
+    margin-top: 150px;
+    .highlightText {
+      color: #f4c024;
+      display: block;
+  
+    }
   }
+  margin-right: 7vw;
 }
+
 
