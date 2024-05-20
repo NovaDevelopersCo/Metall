@@ -1,10 +1,10 @@
 'use client'
 
+import Footer from './metaFooter'
 import styles from './metallBlock.module.scss'
+import Doc from '@/../public/image/fluent--document-bullet-list-cube-20-regular.svg'
 import Button from '@/shared/ui/Button/metaButton'
 import React from 'react'
-import Footer from './metaFooter'
-import Doc from '@/../public/image/fluent--document-bullet-list-cube-20-regular.svg'
 
 interface MetallBlockProps {
 	metallInfo: {
@@ -26,9 +26,14 @@ const MetallBlock: React.FC<MetallBlockProps> = ({ metallInfo }) => {
 				</h1>
 				<button
 					className={styles['list-button']}
-					onClick={() => console.log('Скачать прайс-лист')}>
-<img src={Doc.src} alt="иконка" className={styles['button-icon']}/>
-<span>Скачать прайс-лист</span>
+					onClick={() => console.log('Скачать прайс-лист')}
+				>
+					<img
+						src={Doc.src}
+						alt='иконка'
+						className={styles['button-icon']}
+					/>
+					<span>Скачать прайс-лист</span>
 				</button>
 			</div>
 			<div className={styles['card-container']}>
@@ -49,9 +54,8 @@ const MetallBlock: React.FC<MetallBlockProps> = ({ metallInfo }) => {
 					</div>
 				))}
 			</div>
-			<Footer/>
+			<Footer />
 		</div>
-		
 	)
 }
 
