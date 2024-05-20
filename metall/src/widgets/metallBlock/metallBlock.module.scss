@@ -4,7 +4,7 @@
   grid-template-columns: repeat(3, minmax(150px, 1fr)); // Изменено значение на repeat(3, ...)
   gap: 10px;
 	margin: 0 auto;
-
+cursor: pointer;
   .card {
     position: relative;
     max-width: 370px;
