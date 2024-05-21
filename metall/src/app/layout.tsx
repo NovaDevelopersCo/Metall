@@ -1,7 +1,4 @@
 import './globals.css'
-import { Header } from '@/widgets/Header'
-import { SecondHeader } from '@/widgets/SecondHeader'
-import { Footer } from '@/widgets/Footer'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import AppProvider from './_utils/AppProvider'
@@ -22,10 +19,7 @@ export default function RootLayout({
 		<html lang='ru'>
 			<body className={inter.className}>
 				<AppProvider>
-					<Header/>
-					<SecondHeader/>
 					{children}
-					<Footer/>
 				</AppProvider>
 			</body>
 		</html>

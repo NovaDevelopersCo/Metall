@@ -1,4 +1,3 @@
-import { SecondHeader } from '@/widgets/SecondHeader'
 
 import Main from "@/widgets/Main/ui/Main";
 
