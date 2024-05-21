@@ -1,29 +1,26 @@
-.Services{
-    margin: 0 auto;
-    position: relative;
-    max-width: 1140px;
+.Services {
+    @apply mx-auto relative max-w-[1140px];
 }
-.ServicesTitle{
-    font-weight: 800;
-    font-size: 32px;
-    line-height: 38px;
-    color: #000;
+
+.ServicesTitle {
+    @apply font-semibold text-2xl leading-[38px] text-black;
 }
-.CardsContent{
-    margin: 0 auto;
-    position: relative;
+
+.CardsContent {
+    @apply mx-auto relative grid gap-[200px];
     display: grid;
-    gap: 200px;
 }
-.Card{
-    position: relative;
-    z-index: 1;
+
+.Card {
+    @apply relative z-10;
 }
-.Arrow{
-    margin: 61px 0 43px 0;
+
+.Arrow {
+    @apply my-16 md:my-0 md:mt-24 md:mb-16;
 }
+
 @media (max-width: 1200px) {
-  .Services {
-    margin: 0 30px;
-  }
+    .Services {
+        @apply mx-4;
+    }
 }
