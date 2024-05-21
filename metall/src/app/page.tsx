@@ -1,12 +1,16 @@
 
-import Footer from "@/widgets/Footer/ui/Footer";
-import Services from "@/widgets/Services/ui/Services";
+import Breadcrumbs from '@/entities/BreadCrumbs/ui/Breadcrumbs';
+import { Services } from '@/widgets/Services';
+import { Footer } from '@/widgets/Footer';
 
-export default function Home() {
+const Home = () => {
   return (
     <>
+      <Breadcrumbs />
       <Services />
       <Footer />
     </>
   );
-}
+};
+
+export default Home;

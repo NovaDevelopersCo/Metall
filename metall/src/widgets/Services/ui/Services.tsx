@@ -2,7 +2,7 @@ import styles from './Services.module.scss';
 import Card from './@Card/Card';
 import ScrollArrow from '@/features/ScrollArrowUp/ui/ScrollArrow';
 
-const Services = () => {
+const Services: React.FC = () => {
   const cardsData = [
     {
       number: '01',
