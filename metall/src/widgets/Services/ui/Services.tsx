@@ -1,6 +1,7 @@
 import styles from './Services.module.scss';
 import Card from './@Card/Card';
 import ScrollArrow from '@/features/ScrollArrowUp/ui/ScrollArrow';
+import Breadcrumbs from '@/entities/BreadCrumbs/ui/Breadcrumbs';
 
 const Services: React.FC = () => {
   const cardsData = [
@@ -72,6 +73,11 @@ const Services: React.FC = () => {
 
   return (
     <div className={styles.Services}>
+      <Breadcrumbs breadcrumbs={[
+        { text: 'Главная', href: '/' },
+        { text: 'Услуги', href: '/services', isLink: false }
+      ]} />
+
       <div className={styles.CardsContent}>
         <p className={styles.ServicesTitle}>Услуги</p>
         {cardsData.map((cardData, index) => (

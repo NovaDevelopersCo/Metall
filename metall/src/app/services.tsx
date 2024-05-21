@@ -1,15 +1,11 @@
-
-import Breadcrumbs from '@/entities/BreadCrumbs/ui/Breadcrumbs';
 import { Services } from '@/widgets/Services';
 import { Footer } from '@/widgets/Footer';
 
-export default function Service() {
+export default function ServicesPage() {
     return (
         <>
-            <Breadcrumbs />
             <Services />
             <Footer />
         </>
     );
-};
-
+}

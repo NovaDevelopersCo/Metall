@@ -1,8 +1,7 @@
-"use client";
-
-import { useState, useEffect } from 'react';
+'use client'
+import React from 'react';
 import Link from 'next/link';
-import { useSelectedLayoutSegments } from 'next/navigation';
+import { usePathname } from 'next/navigation';
 
 interface BreadcrumbItem {
     text: string;
@@ -10,39 +9,41 @@ interface BreadcrumbItem {
 }
 
 interface BreadcrumbsProps {
-    items?: BreadcrumbItem[];
+    breadcrumbs?: BreadcrumbItem[];
 }
 
-const Breadcrumbs: React.FC<BreadcrumbsProps> = ({ items = [] }) => {
-    const segments = useSelectedLayoutSegments();
-    const [breadcrumbs, setBreadcrumbs] = useState<BreadcrumbItem[]>(items);
-
-    useEffect(() => {
-        const updatedBreadcrumbs = segments.map((segment, index) => ({
-            text: segment.charAt(0).toUpperCase() + segment.slice(1),
-            href: `/${segments.slice(0, index + 1).join('/')}`,
-        }));
-        setBreadcrumbs(updatedBreadcrumbs);
-    }, [segments]);
+const Breadcrumbs: React.FC<BreadcrumbsProps> = ({ breadcrumbs = [] }) => {
+    const pathname = usePathname();
 
     return (
         <nav className="text-sm" aria-label="Breadcrumb">
-            <ol className="flex">
-                {breadcrumbs.map((item, index) => (
-                    <li key={index} className="flex items-center">
-                        {index > 0 && <hr className="border-solid border border-gray-800 h-0 w-22 my-0 mx-4" />}
-                        <Link href={item.href}>
-                            <a
-                                className={`text-base ${segments.some((segment) => segment === item.href.split('/').pop()) ? 'text-yellow-500' : 'text-gray-700'}`}
-                                style={{ fontSize: '18px', color: segments.some((segment) => segment === item.href.split('/').pop()) ? '#FFC824' : '#0D0D0D' }}
-                            >
-                                {item.text}
-                            </a>
-                        </Link>
-                    </li>
-                ))}
-            </ol>
-        </nav>
+            <ol>
+                <li style={{ display: 'flex', alignItems: 'center' }}>
+                    {breadcrumbs.map((item, index) => (
+                        <React.Fragment key={index}>
+                            {index > 0 && (
+                                <span className="h-0 w-22 my-0 mx-4" />
+                            )}
+                            {item.isLink !== false ? (
+                                <Link href={item.href}>
+                                    <span className={`text-base ${pathname && pathname.includes(item.href) ? 'text-yellow-500' : 'text-gray-700'}`} style={{ fontSize: '18px', fontWeight: 400, lineHeight: '21px', letterSpacing: '-1.5%', textAlign: 'left', color: pathname && pathname.includes(item.href) ? '#0D0D0D' : '#FFC824' }}>
+                                        {item.text}
+                                    </span>
+                                </Link>
+                            ) : (
+                                <span className="text-base text-gray-700" style={{ fontSize: '18px', fontWeight: 400, lineHeight: '21px', letterSpacing: '-1.5%', textAlign: 'left', color: '#FFC824' }}>
+                                    {item.text}
+                                </span>
+                            )}
+                            {index < breadcrumbs.length - 1 && (
+                                <hr style={{ border: "1px solid #000", height: "1px", width: "22px", margin: "0 10px 0 10px" }} />
+                            )}
+                        </React.Fragment>
+                    ))}
+
+                </li>
+            </ol >
+        </nav >
     );
 };
 
