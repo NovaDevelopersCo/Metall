@@ -2,6 +2,7 @@
 
 import { Button, Modal, Input, Select } from 'antd'
 import React, { useState } from 'react'
+import style from './CallModal.module.scss'
 
 const { Option } = Select
 
@@ -60,7 +61,7 @@ const CallModal: React.FC = () => {
 							placeholder='Ваше имя'
 							value={name}
 							onChange={e => setName(e.target.value)}
-							style={{ width: '100%', maxWidth: '350px', marginBottom: '10px' }}
+							className={style.Input}
 						/>
 						<br />
 						<Input
@@ -68,7 +69,7 @@ const CallModal: React.FC = () => {
 								<Select
 									value={countryCode}
 									onChange={setCountryCode}
-									style={{ width: '75px' }}
+									style={{ width: '75px', borderColor: '#F2F2F2' }}
 								>
 									<Option value='+1'>+1</Option>
 									<Option value='+7'>+7</Option>
@@ -78,12 +79,15 @@ const CallModal: React.FC = () => {
 							placeholder='555 555-1234'
 							value={phone}
 							onChange={e => setPhone(e.target.value)}
-							style={{ width: '100%', maxWidth: '350px', marginBottom: '10px' }}
+							className={style.Input}
 						/>
 						<br />
-						<button>
+						<button style={{ fontWeight: 'bold', backgroundColor: '#FFC824', marginTop: 30 , borderRadius: 10, paddingTop: 5, paddingBottom: 5, paddingLeft: 10, paddingRight: 10 }}>
                             Отправить
                         </button>
+						<p style={{ fontWeight: 'bold', marginTop: 40 }}>
+							Отправляя форму, вы даете согласие на <br/> обработку персональных данных.
+						</p>
 					</form>
 				)}
 			</Modal>
