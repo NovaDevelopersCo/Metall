@@ -13,7 +13,7 @@ const Feedback: React.FC = () => {
     };
     //
     return (
-        <div>
+        <div className="pt-20 pr-36 pb-28 pl-36">
             <h3 className="text-2xl font-roboto-flex font-extrabold text-yellow-400 mb-8">Обратная связь</h3>
             <div className="flex flex-row">
                 <div className="flex flex-col gap-4 mt-0 mr-10 pb-10 pl-0">

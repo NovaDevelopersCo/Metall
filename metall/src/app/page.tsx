@@ -1,8 +1,8 @@
 // import Image from "next/image";
 import Breadcrumbs from "@/shared/ui/Breadcrumbs/Breadcrumbs";
-import Contacts from "@/widgets/ui/Contacts/Contacts";
-import MapLocation from "@/widgets/ui/MapLocation/MapLocation";
-import Feedback from "@/widgets/ui/Feedback/Feedback";
+import Contacts from "@/widgets/Contacts/ui/Contacts";
+import MapLocation from "@/widgets/Contacts/ui/MapLocation/MapLocation";
+import Feedback from "@/widgets/Contacts/ui/RadioInput/RadioInput";
 
 
 // const breadcrumbsData: BreadcrumbItem[] = [
@@ -13,7 +13,7 @@ import Feedback from "@/widgets/ui/Feedback/Feedback";
 export default function Home() {
   return (
     <>
-      
+      <Contacts />
     </>
   );
 }
