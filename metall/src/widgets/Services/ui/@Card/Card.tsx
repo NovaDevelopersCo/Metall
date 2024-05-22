@@ -20,8 +20,8 @@ const Card: React.FC<CardProps> = ({ number, img, title, text1, text2, highlight
     return (
         <>
             <div className={styles.CardsContainer}>
-                <span className={styles.Number}>{number}</span>
                 <div className={styles.CardBox}>
+                    <span className={styles.Number}>{number}</span>
                     <div className={styles.Card}>
                         <h3>{title}</h3>
                         <div className={styles.Describe}>

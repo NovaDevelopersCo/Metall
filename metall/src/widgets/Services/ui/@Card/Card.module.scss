@@ -1,7 +1,6 @@
-.CardBox {
-    @apply relative z-20 mx-auto rounded-lg p-10 shadow-[0px_12px_26px_0px_rgba(158,158,158,0.1),0px_48px_48px_0px_rgba(158,158,158,0.09),0px_107px_64px_0px_rgba(158,158,158,0.05),0px_191px_76px_0px_rgba(158,158,158,0.01),0px_298px_83px_0px_rgba(158,158,158,0)] bg-white;
+.Card{
+    @apply relative z-10 mx-auto rounded-lg p-10 shadow-[0px_12px_26px_0px_rgba(158,158,158,0.1),0px_48px_48px_0px_rgba(158,158,158,0.09),0px_107px_64px_0px_rgba(158,158,158,0.05),0px_191px_76px_0px_rgba(158,158,158,0.01),0px_298px_83px_0px_rgba(158,158,158,0)] bg-white;
 }
-
 .Card h3 {
     @apply text-black font-semibold text-4xl leading-[38px];
 }

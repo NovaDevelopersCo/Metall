@@ -6,8 +6,8 @@ import { Services } from '@/widgets/Services';
 const Home = () => {
   return (
     <>
-      {/* <Breadcrumbs breadcrumbs={[{ text: 'Услуги', href: '/services' }]} /> */}
-      <Services />
+      <Breadcrumbs breadcrumbs={[{ text: 'Услуги', href: '/services' }]} />
+      {/* <Services /> */}
       <Footer />
     </>
   );
