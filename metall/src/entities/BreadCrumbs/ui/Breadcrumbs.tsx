@@ -6,6 +6,7 @@ import { usePathname } from 'next/navigation';
 interface BreadcrumbItem {
     text: string;
     href: string;
+    isLink: boolean;
 }
 
 interface BreadcrumbsProps {
