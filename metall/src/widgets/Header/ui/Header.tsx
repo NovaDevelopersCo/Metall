@@ -1,12 +1,14 @@
+import Gps from '@/shared/ui/icons/Gps'
+import Clock from '@/shared/ui/icons/Clock'
 import styles from './Header.module.scss'
-import { Clock3, MapPin } from 'lucide-react' /* Лучше это убери , мыэто не юзаем , бери с шаблона иконки  */
+import Burger from '@/shared/ui/icons/Burger'
 
 const Header = () => {
 	return (
 		<header className={styles.header}>
 			<nav className={styles.headerNavigation}>
 				<div className={styles.location}>
-					<MapPin />
+					<Gps />
 					<select>
 						<option value='option1'>Москва</option>
 					</select>
@@ -17,11 +19,14 @@ const Header = () => {
 					</a>
 				</div>
 				<div className={styles.clockBlock}>
-					<Clock3 />
+					<Clock />
 					<span>Пн. - Пт.: 9:00 - 18:00</span>
 				</div>
-				<a href='tel:+7 (499) 938-95-77'>+7 (499) 938-95-77</a>
-				<a href='mailto:metal@gmail.com'>metal@gmail.com</a>
+				<a className={styles.contactInfo} href='tel:+7 (499) 938-95-77'>+7 (499) 938-95-77</a>
+				<a className={styles.contactInfo} href='mailto:metal@gmail.com'>metal@gmail.com</a>
+				<div className={styles.burgerMenu}>
+					<Burger />
+				</div>
 			</nav>
 		</header>
 	)

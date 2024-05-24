@@ -5,7 +5,7 @@
 
 	.headerNavigation {
 		@apply flex gap-2 flex-nowrap items-center justify-between;
-		max-width: 1200px; //сделать желательно компонент с контейнером
+		max-width: 1200px; 
 		margin: 0 auto;
 	}
 	.location {
@@ -13,21 +13,25 @@
 	}
 	.clockBlock {
 		@apply flex justify-center items-center gap-1;
-		@media (max-width: 1024px) {
-			display: none;
-		}
 	}
 	select {
 		@apply bg-inherit;
 	}
-}
-
-.number {
-	@apply font-semibold;
-}
-
-@media (max-width: 786px) {
-	.address {
-		display: none;
+	@media (max-width: 1050px) {
+		.contactInfo{
+			display: none
+		}
+		.clockBlock{
+			display: none
+		}
+		.address{
+			display: none
+		}
 	}
+}
+.burgerMenu{
+	@apply hidden;
+    @media (max-width: 1050px) {
+	   display: block;
+    }
 }
