@@ -3,9 +3,9 @@ import Image from "next/image"
 
 export const UsAdvantages =({})=> {
     return (
-        <div>
-            <h3 className="font-extrabold text-[32px] ml-[150px] my-[80px]">Наши преимущества</h3>
-                        <div className="flex mx-[150px]">
+        <div className="flex flex-col max-xl:text-center">
+            <h3 className="font-extrabold text-[32px] ml-[150px] my-[80px] max-xl:m-[0px]">Наши преимущества</h3>
+                        <div className="flex mx-[150px] max-w-[1500px] max-xl:flex-col items-center">
                             <div className="flex flex-col w-[283px] items-center text-center mr-[11px]">
                                 <Image className="py-[5px]" src={vector} alt='img-vector'></Image>
                                 <p className=" py-[15px] font-roboto font-bold text-[18px] text-yellow-400">Широкий ассортимент металла</p>

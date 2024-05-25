@@ -8,19 +8,18 @@ import { UsAdvantages } from "./UsAdvantages"
 
 export const AboutUs = () => {
     return (
-    <div className="flex justify-center">
+    <div className="flex justify-center ">
                     <div className="flex flex-col justify-center">
-                    <div className="w-[998px] h-[283px] borde mx-[150px] my-[52px]" >
-                         <h1 className=" text-[63px] font-medium  font-roboto text-yellow-400">"Производственная компания РС — вместе создаем прочные основы вашего успеха!"</h1>
+                        <div className="w-[998px] h-[283px] my-[52px] self-center max-xl:w-[650px] max-md:w-[330px]" >
+                            <h1 className="text-[63px] font-medium  font-roboto text-yellow-400 self-center max-xl:text-[50px] max-md:text-[40px] ">"Производственная компания РС — вместе создаем прочные основы вашего успеха!"</h1>
+                        </div>
+                    <div className="relative">
+                            <Image  className=" relative w-full" src={aboutUs} alt="img-aboutUs"/>
+                            <Image className="absolute left-[413px] top-[542px] max-xl:max-w-[70px] max-xl:left-[300px] max-xl:top-[400px] max-md:left-[200px] max-md:top-[250px] max-md:w-[50px]" src={arrow} alt='img-arrow'/>  
                     </div>
                     <div >
-                        <div className="relative h-[668px]">
-                            <Image  className="w-[1440px]" src={aboutUs} alt="img-aboutUs"/>
-                            <Image className="absolute left-[413px] top-[542px]" src={arrow} alt='img-arrow'/> 
-                        
-                        </div>
-                    </div>
                         <DescribeAboutUs />
+                    </div>
                     <div>
                         <UsAdvantages /> 
                     </div>
