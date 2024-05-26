@@ -1,7 +1,13 @@
-import Main from "@/widgets/Main/ui/Main";
 
-export default function Home() {
+import { Footer } from '@/widgets/Footer';
+import Breadcrumbs from '@/entities/BreadCrumbs/ui/Breadcrumbs';
+const Home = () => {
   return (
-    <Main/>
+    <>
+      <Breadcrumbs breadcrumbs={[{ text: 'Услуги', href: '/services' }]} />
+      <Footer />
+    </>
   );
-}
+};
+
+export default Home;

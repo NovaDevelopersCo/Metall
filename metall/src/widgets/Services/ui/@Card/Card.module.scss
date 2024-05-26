@@ -1,0 +1,71 @@
+.Card{
+    @apply relative z-10 mx-auto rounded-lg p-10 shadow-[0px_12px_26px_0px_rgba(158,158,158,0.1),0px_48px_48px_0px_rgba(158,158,158,0.09),0px_107px_64px_0px_rgba(158,158,158,0.05),0px_191px_76px_0px_rgba(158,158,158,0.01),0px_298px_83px_0px_rgba(158,158,158,0)] bg-white;
+}
+.Card h3 {
+    @apply text-black font-semibold text-4xl leading-[38px];
+}
+
+.Card p {
+    @apply text-black text-2xl leading-7 text-left;
+}
+
+.Describe {
+    @apply flex;
+}
+
+.Text1 {
+    @apply mt-7;
+}
+
+.Text2 {
+    @apply mt-1.5;
+}
+
+.Card img {
+    @apply w-[442px] h-[215px] ml-20;
+}
+
+.Number {
+    background: linear-gradient(171.56deg, rgb(255, 215, 97), rgb(255, 224, 132), rgba(255, 255, 255, 0));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-size: 162px;
+    font-weight: 700;
+    line-height: 190px;
+    letter-spacing: 0%;
+    text-align: center;
+    font-style: oblique;
+    position: absolute;
+    top: -29%;
+    z-index: 1;
+    right: 12%;
+  }
+
+
+@media (max-width: 1200px) {
+    .Card h3 {
+        @apply text-3xl leading-7;
+    }
+    .Card p {
+        @apply text-lg leading-6;
+    }
+    .Card img {
+        @apply w-[342px] h-[150px] ml-5;
+    }
+    .Number {
+        @apply text-[115px] leading-[140px];
+    }
+}
+
+@media (max-width: 800px) {
+    .Describe {
+        @apply flex-col gap-10 mb-10 items-center;
+    }
+}
+
+@media (max-width: 1000px) {
+    .Number {
+        @apply hidden;
+    }
+}
