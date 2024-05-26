@@ -1,6 +1,7 @@
 import styles from './SecondHeader.module.scss'
 import Basket from '@/shared/ui/icons/Basket'
 import Search from '@/shared/ui/icons/Search'
+import Link from 'next/link'
 
 const SecondHeader = () => {
 	return (
@@ -9,16 +10,16 @@ const SecondHeader = () => {
 				<ul className={styles.menu}>
 					<h1 className={styles.logo}>ПК РС</h1>
 					<li>
-						<a href='#'>Каталог товаров</a>
+						<Link href='/'>Каталог товаров</Link>
 					</li>
 					<li>
-						<a href='#'>О нас</a>
+						<Link href='/'>О нас</Link>
 					</li>
 					<li>
-						<a href='#'>Услуги</a>
+						<Link href='/'>Услуги</Link>
 					</li>
 					<li>
-						<a href='#'>Контакты</a>
+						<Link href='/'>Контакты</Link>
 					</li>
 					<div className={styles.icons}>
 						<a href='#'>
