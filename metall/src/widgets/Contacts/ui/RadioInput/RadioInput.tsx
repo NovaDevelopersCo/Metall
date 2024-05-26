@@ -1,6 +1,8 @@
 
 "use client"
 
+import styles from './RadioInput.module.scss'
+
 type RadioInputProps = {
     checked: boolean;
     onChange: () => void;
@@ -29,7 +31,7 @@ const RadioInput: React.FC<RadioInputProps> = ({ checked, onChange, label, }) =>
           checked={checked}
           onChange={onChange}
         />
-        <span className="ml-2 w-407">{label}</span>
+        <span className={styles.RadioInputLabel}>{label}</span>
         {/* <span className="ml-2">{spanText}</span> */}
       </label>
     );

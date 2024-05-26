@@ -14,6 +14,7 @@ export default function Home() {
   return (
     <>
       <Contacts />
+      {/* <Breadcrumbs items={breadcrumbsData} /> */}
     </>
   );
 }

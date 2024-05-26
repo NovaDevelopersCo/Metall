@@ -21,6 +21,10 @@ const config: Config = {
       },
     },
   },
+  screens: {
+    'sm': {'max': '639px'},
+    'md': {'max': '767px'},
+  },
   plugins: [],
 };
 export default config;
