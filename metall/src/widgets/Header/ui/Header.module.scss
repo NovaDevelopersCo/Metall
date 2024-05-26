@@ -1,0 +1,33 @@
+.header {
+	@apply bg-[#FFC824] top-0 text-[##0D0D0D] w-full font-medium;
+	line-height: 18.75px;
+	padding: 22px;
+
+	.headerNavigation {
+		@apply flex gap-2 flex-nowrap items-center justify-between;
+		max-width: 1200px; //сделать желательно компонент с контейнером
+		margin: 0 auto;
+	}
+	.location {
+		@apply flex justify-center items-center gap-1;
+	}
+	.clockBlock {
+		@apply flex justify-center items-center gap-1;
+		@media (max-width: 1024px) {
+			display: none;
+		}
+	}
+	select {
+		@apply bg-inherit;
+	}
+}
+
+.number {
+	@apply font-semibold;
+}
+
+@media (max-width: 786px) {
+	.address {
+		display: none;
+	}
+}
