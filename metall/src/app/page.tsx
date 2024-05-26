@@ -1,11 +1,8 @@
-
-import { Footer } from '@/widgets/Footer';
-import Breadcrumbs from '@/entities/BreadCrumbs/ui/Breadcrumbs';
+import { Main } from '@/widgets/Main';
 const Home = () => {
   return (
     <>
-      <Breadcrumbs breadcrumbs={[{ text: 'Услуги', href: '/services' }]} />
-      <Footer />
+      <Main />
     </>
   );
 };
