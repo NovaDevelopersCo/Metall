@@ -1,4 +1,3 @@
-import { BurgerMenu } from '@/entities/BurgerMenu'
 import './globals.css'
 import { Header } from '@/widgets/Header'
 import { SecondHeader } from '@/widgets/SecondHeader'
@@ -22,7 +21,6 @@ export default function RootLayout({
 			<body className={inter.className}>{children}</body>
 			<Header />
 			{/* <SecondHeader /> */}
-			<BurgerMenu />
 		</html>
 	)
 }

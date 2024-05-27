@@ -1,15 +1,39 @@
 .Container {
-    @apply hidden h-full absolute top-0 right-0 p-9 bg-[#FFC824] text-[##0D0D0D] font-medium;
-}
-
-.Menu {
-    @apply grid gap-10;
-}
-
-.Close {
-    @apply justify-self-end;
-}
-
-.clockBlock {
-    @apply flex items-center gap-4;
-}
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 25px 40px 40px ;
+    background-color: #FFC824;
+    display: none;
+    height: 100%;
+    z-index: 20;
+    animation: slideIn 0.3s ease forwards;
+  }
+  
+  .Menu {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  
+  .Close {
+    justify-self: end;
+  }
+  
+  .clockBlock {
+    align-items: center;
+    display: flex;
+    gap: 10px;
+  }
+  
+  @keyframes slideIn {
+    0% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }

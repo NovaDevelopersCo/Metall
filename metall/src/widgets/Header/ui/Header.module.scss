@@ -1,37 +1,42 @@
 .header {
-	@apply bg-[#FFC824] fixed top-0 text-[##0D0D0D] w-full font-medium;
-	line-height: 18.75px;
-	padding: 22px;
+    @apply bg-[#FFC824] fixed top-0 text-gray-900 w-full font-medium;
+    line-height: 18.75px;
+    padding: 22px;
 
-	.headerNavigation {
-		@apply flex gap-2 flex-nowrap items-center justify-between;
-		max-width: 1200px; 
-		margin: 0 auto;
-	}
-	.location {
-		@apply flex justify-center items-center gap-1;
-	}
-	.clockBlock {
-		@apply flex justify-center items-center gap-1;
-	}
-	select {
-		@apply bg-inherit;
-	}
-	@media (max-width: 1050px) {
-		.contactInfo{
-			display: none
-		}
-		.clockBlock{
-			display: none
-		}
-		.address{
-			display: none
-		}
-	}
-}
-.burgerMenu{
-	@apply hidden;
-    @media (max-width: 1050px) {
-	   display: block;
+    .headerNavigation {
+        @apply flex gap-2 flex-nowrap items-center justify-between;
+        max-width: 1200px;
+        margin: 0 auto;
     }
+    .location {
+        @apply flex justify-center items-center gap-1;
+    }
+    .clockBlock {
+        @apply flex justify-center items-center gap-1;
+    }
+    select {
+        @apply bg-transparent;
+    }
+    @media (max-width: 1050px) {
+        .contactInfo {
+            display: none;
+        }
+        .clockBlock {
+            display: none;
+        }
+        .address {
+            display: none;
+        }
+    }
+}
+
+.burger {
+    @apply hidden;
+    @media (max-width: 1050px) {
+        display: block;
+    }
+}
+
+.hide {
+    @apply hidden;
 }
