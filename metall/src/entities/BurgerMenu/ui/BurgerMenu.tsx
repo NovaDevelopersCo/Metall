@@ -4,7 +4,7 @@ import Clock from "@/shared/ui/icons/Clock";
 import CloseBtn from '@/shared/ui/icons/CloseBtn';
 
 interface BurgerMenuProps {
-    setHideOrShow: React.CSSProperties;
+    setHideOrShow: React.HTMLAttributes<HTMLDivElement>;
     isOpen: boolean;
     handleMenu: () => void;
 }
@@ -18,7 +18,7 @@ const BurgerMenu: React.FC<BurgerMenuProps> = ({ setHideOrShow, isOpen, handleMe
                         <CloseBtn />
                     </button>
                     <div className={styles.address}>
-                        <a href='href=https://maps.google.com/?g=55.745875,37.578137'>
+                        <a href='https://maps.google.com/?g=55.745875,37.578137'>
                             Адрес: Смоленская улица 39, Москва
                         </a>
                     </div>
