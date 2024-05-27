@@ -12,7 +12,7 @@ interface BurgerMenuProps {
 const BurgerMenu: React.FC<BurgerMenuProps> = ({ setHideOrShow, isOpen, handleMenu }) => {
     return (
         <>
-            <div className={`${styles.Container} ${isOpen ? styles.visible : ''}`} style={setHideOrShow}>
+            <div className={styles.Container} style={setHideOrShow}>
                 <div className={styles.Menu}>
                     <button className={styles.Close} onClick={handleMenu}>
                         <CloseBtn />

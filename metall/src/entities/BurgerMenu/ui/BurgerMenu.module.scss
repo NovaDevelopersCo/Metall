@@ -1,39 +1,16 @@
-.Container {
-    height: 100%;
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: 25px 40px 40px ;
-    background-color: #FFC824;
-    display: none;
-    height: 100%;
-    z-index: 20;
-    animation: slideIn 0.3s ease forwards;
+  .Container {
+    @apply h-full absolute top-0 right-0 p-6 pl-10 pr-10 pt-6 bg-[#FFC824] hidden h-full z-20;
   }
   
   .Menu {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
+    @apply flex flex-col gap-10;
   }
   
   .Close {
-    justify-self: end;
+    @apply self-end;
   }
   
   .clockBlock {
-    align-items: center;
-    display: flex;
-    gap: 10px;
+    @apply items-center flex gap-2.5;
   }
   
-  @keyframes slideIn {
-    0% {
-      transform: translateX(100%);
-      opacity: 0;
-    }
-    100% {
-      transform: translateX(0);
-      opacity: 1;
-    }
-  }
