@@ -4,7 +4,7 @@ import Gps from '@/shared/ui/icons/Gps';
 import Clock from '@/shared/ui/icons/Clock';
 import styles from './Header.module.scss';
 import Burger from '@/shared/ui/icons/Burger';
-import { BurgerMenu } from '@/entities/BurgerMenu';
+import { BurgerMenu } from '@/features/BurgerMenu';
 
 const Header = () => {
 	const [isOpen, setIsOpen] = useState(false);
