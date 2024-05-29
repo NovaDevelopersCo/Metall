@@ -18,7 +18,7 @@ const SecondHeader = () => {
 	return (
 		<>
 			<div className={styles.secondHeader}>
-				<nav className={styles.secondHeaderNavigation}>
+				<div className={styles.secondHeaderNavigation}>
 					<div className={styles.menu}>
 						<h1 className={styles.logo}>ПК РС</h1>
 						<ul className={styles.pages}>
@@ -58,7 +58,7 @@ const SecondHeader = () => {
 							<Basket />
 						</button>
 					</div>
-				</nav>
+				</div>
 			</div>
 			<PagesMenu setHideOrShow={hideOrShow} isOpen={isOpen} handleMenu={handleMenu} />
 		</>
