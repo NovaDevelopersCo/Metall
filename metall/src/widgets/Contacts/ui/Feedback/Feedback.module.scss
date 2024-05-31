@@ -61,6 +61,38 @@
 }
 
 
+@media (max-width: 1200px) {
+    .FeedbackContainer {
+        @apply p-3 mt-3
+    }
+
+    .Textarea {
+        @apply pt-3.5 pr-60 pb-20 pl-5
+    }
+}
+
+@media (max-width: 800px) {
+    .FeedbackContainer {
+        @apply flex flex-col items-center
+    }
+
+    .InputsCommonContainer {
+        @apply flex flex-col  mx-auto justify-center items-center
+    }
+
+    .NameInput {
+        @apply w-80 p-2
+    }
+
+    .EmailInput {
+        @apply w-80 p-2
+    }
+
+    .sendButtonContainer {
+        @apply mx-auto
+    }
+}
+
 @media (max-width: 375px) {
     .FeedbackContainer {
         @apply p-0

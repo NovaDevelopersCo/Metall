@@ -124,6 +124,62 @@
 }
 
 
+@media (max-width: 1200px) {
+    .PricesBlock {
+        @apply gap-24
+    }
+
+    .FeedbackDataBlock {
+        @apply gap-16
+    }
+
+    .RequisiteBlockInsideButton {
+        @apply p-4
+    }
+
+    .PriceBlockInsideButton {
+        @apply p-4
+    }
+
+    .AddressBlockContainer {
+        @apply flex flex-col justify-center items-center
+    }
+    
+    .RequestButton {
+        @apply ml-0 mt-2
+    }
+}
+
+@media (max-width: 800px) {
+    .ContactsContainer {
+        @apply flex items-center
+    }
+
+    .ContactsBlocksContainer {
+        @apply flex flex-col items-center
+    }
+
+    .PricesBlock {
+        @apply gap-1
+    }
+
+    .RequisiteBlockInside {
+        @apply flex flex-col items-center
+    }
+
+    .PriceBlockInside {
+        @apply flex flex-col items-center
+    }
+
+    .EmailContainer {
+        @apply flex flex-col items-center
+    }
+
+    .PhoneContainer {
+        @apply flex flex-col items-center
+    }
+}
+
 @media (max-width: 375px) {
     .ContactsBlocksContainer {
         @apply flex flex-col
