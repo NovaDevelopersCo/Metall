@@ -19,7 +19,7 @@ const SecondHeader = () => {
 						<Link href='/services'>Услуги</Link>
 					</li>
 					<li>
-						<Link href='/'>Контакты</Link>
+						<Link href='/contact'>Контакты</Link>
 					</li>
 					<div className={styles.icons}>
 						<a href='#'>
