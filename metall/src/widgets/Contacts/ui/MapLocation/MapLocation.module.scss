@@ -1,0 +1,20 @@
+
+.MapIframe {
+    @apply w-full h-96
+}
+
+@media (max-width: 1200px) {
+    .MapIframe {
+        @apply mx-auto w-10/12
+    }
+}
+
+@media (max-width: 375px) {
+    .MapContainer {
+        @apply mt-10
+    }
+
+    .MapIframe {
+        @apply mx-auto w-10/12 
+    }
+}

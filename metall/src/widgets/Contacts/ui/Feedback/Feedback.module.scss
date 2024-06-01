@@ -1,0 +1,141 @@
+
+.FeedbackContainer {
+    @apply pt-20 pr-36 pb-28 pl-36
+}
+
+.FeedbackTitle {
+    @apply text-2xl font-extrabold text-yellow-400 mb-8
+}
+
+
+.InputsCommonContainer {
+    @apply flex flex-row
+}
+
+.FirstInputContainer {
+    @apply flex flex-col gap-4 mt-0 mr-10 pb-10 pl-0
+}
+
+.NameInput {
+    @apply border border-gray-200 pt-5 pr-72 pb-5 pl-5 text-base font-medium text-gray-800
+}
+
+.EmailInput {
+    @apply border border-gray-200 pt-5 pr-96 pb-5 pl-5 text-base font-medium text-gray-800
+}
+
+.SelectPhoneNumber {
+    @apply p-2 mr-4  bg-white
+}
+
+.PhoneNumberInput {
+    @apply p-2
+}
+
+.SecondInputContainer {
+    @apply flex flex-col
+}
+
+.MessageInputContainer {
+    @apply mb-4
+}
+
+.TextareaContainer {
+    @apply mb-6
+}
+
+.Textarea {
+    @apply border border-solid border-gray-200 pt-3.5 pr-80 pb-20 pl-5 text-base font-medium text-gray-800
+}
+
+.RadioInputContainer {
+    @apply flex items-center
+}
+
+.sendButtonContainer {
+    @apply pt-3.5 pr-12 pb-4 pl-12  mt-5 ml-auto
+}
+
+.SendButton {
+    @apply rounded-lg bg-yellow-300 text-base font-semibold pt-3.5 pr-12 pb-4 pl-12  w-183  ml-auto
+}
+
+
+@media (max-width: 1200px) {
+    .FeedbackContainer {
+        @apply p-3 mt-3
+    }
+
+    .Textarea {
+        @apply pt-3.5 pr-60 pb-20 pl-5
+    }
+}
+
+@media (max-width: 800px) {
+    .FeedbackContainer {
+        @apply flex flex-col items-center
+    }
+
+    .InputsCommonContainer {
+        @apply flex flex-col  mx-auto justify-center items-center
+    }
+
+    .NameInput {
+        @apply w-80 p-2
+    }
+
+    .EmailInput {
+        @apply w-80 p-2
+    }
+
+    .sendButtonContainer {
+        @apply mx-auto
+    }
+}
+
+@media (max-width: 375px) {
+    .FeedbackContainer {
+        @apply p-0
+    }
+
+    .FeedbackTitle {
+        @apply mt-5 pl-2
+    }
+
+    .InputsCommonContainer {
+        @apply flex flex-col
+    }
+
+    .FirstInputContainer {
+        @apply mx-auto
+    }
+
+    .NameInput {
+        @apply border border-gray-200 p-0 text-base font-medium text-gray-800 p-2 pt-0 pb-2 pl-2
+    }
+    
+    .EmailInput {
+        @apply border border-gray-200 p-0 text-base font-medium text-gray-800 p-2 pt-0 pb-2 pl-2
+    }
+
+    .SelectPhoneNumber {
+        @apply p-0 mr-4  bg-white
+    }
+    
+    .PhoneNumberInput {
+        @apply p-0
+    }
+
+    .SecondInputContainer {
+        @apply mx-auto
+    }
+
+    .Textarea {
+        @apply border border-solid border-gray-200 p-2 pt-0 pb-2 pl-2 text-base font-medium text-gray-800 w-72
+    }
+
+    .sendButtonContainer {
+        @apply mx-auto
+    }
+}
+
