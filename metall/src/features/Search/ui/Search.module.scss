@@ -1,0 +1,21 @@
+.searchContainer {
+    @apply absolute top-40 p-4 pl-6 pr-6 pt-4 bg-[#FFFFFF] hidden z-20 text-black font-medium w-full;
+  }  
+.searchInput{
+    width: 100%;
+    outline: none;
+    padding: 10px;
+    :focus,
+    :focus-visible {
+        border: none;
+        outline: none;
+    }
+}
+.searchInput:focus::placeholder,
+.searchInput:focus-visible::placeholder {
+    color: transparent;
+}
+.searchContent{
+    display: flex;
+    justify-content: space-between;
+}

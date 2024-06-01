@@ -1,13 +1,13 @@
 import React from 'react';
 import styles from './PagesMenu.module.scss';
 import CloseBtn from '@/shared/ui/icons/CloseBtn';
-interface BurgerMenuProps {
+interface PagesProps {
     setHideOrShow: React.HTMLAttributes<HTMLDivElement>;
     isOpen: boolean;
     handleMenu: () => void;
 }
 
-const PagesMenu: React.FC<BurgerMenuProps> = ({ setHideOrShow, isOpen, handleMenu }) => {
+const PagesMenu: React.FC<PagesProps> = ({ setHideOrShow, handleMenu }) => {
     return (
         <>
             <div className={styles.Container} style={setHideOrShow}>
