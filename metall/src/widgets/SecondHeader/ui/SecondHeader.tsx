@@ -6,7 +6,6 @@ import Basket from '@/shared/ui/icons/Basket'
 import { Search } from '@/features/Search'
 import SearchBtn from '@/shared/ui/icons/SearchBtn'
 import PagesBtn from '@/shared/ui/icons/PagesBtn';
-import Search from '@/shared/ui/icons/Search'
 import Link from 'next/link'
 
 const SecondHeader = () => {
@@ -42,16 +41,16 @@ const SecondHeader = () => {
 						<h1 className={styles.logo}>ПК РС</h1>
 						<ul className={styles.pages}>
 							<li>
-								<a href='#'>Каталог товаров</a>
+								<Link href='/'>Каталог товаров</Link>
 							</li>
 							<li>
-								<a href='#'>О нас</a>
+								<a href='/'>О нас</a>
 							</li>
 							<li>
-								<a href='#'>Услуги</a>
+								<a href='/services'>Услуги</a>
 							</li>
 							<li>
-								<a href='#'>Контакты</a>
+								<a href='/contact'>Контакты</a>
 							</li>
 						</ul>
 						<div className={styles.pagesMenu}>

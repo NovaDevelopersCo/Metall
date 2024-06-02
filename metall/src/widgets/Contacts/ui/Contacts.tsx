@@ -4,6 +4,7 @@ import documentIcon from '@/../../public/docIcon.svg'
 import TelegramIcon from "@/../../public/telegramIcon.svg"
 import WhatsAppIcon from '@/../../public/whatsappIcon.svg'
 import styles from './Contacts.module.scss'
+import Breadcrumbs from '@/entities/BreadCrumbs/ui/Breadcrumbs';
 
 import MapLocation from "@/widgets/Contacts/ui/MapLocation/MapLocation";
 import Feedback from "./Feedback/Feedback";
@@ -13,6 +14,10 @@ const Contacts: React.FC = () => {
     return (
         <>
             <div className={styles.ContactsContainer}>
+                <Breadcrumbs breadcrumbs={[
+                    { text: 'Главная', href: '/' },
+                    { text: 'Контакты', href: '/services', isLink: false }
+                ]} />
                 <h3 className={styles.ContactsTitle}>Контакты</h3>
                 <div className={styles.ContactsBlocksContainer}>
                     <div className={styles.AddressesBlock}>
