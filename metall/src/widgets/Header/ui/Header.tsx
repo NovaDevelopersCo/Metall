@@ -5,6 +5,7 @@ import Clock from '@/shared/ui/icons/Clock';
 import styles from './Header.module.scss';
 import Burger from '@/shared/ui/icons/Burger';
 import { BurgerMenu } from '@/features/BurgerMenu';
+import { Clock3, MapPin } from 'lucide-react';
 
 const Header = () => {
 	const [isOpen, setIsOpen] = useState(false);

@@ -1,0 +1,208 @@
+
+.ContactsContainer {
+    @apply flex-col pt-12 pr-36 pb-24 pl-36
+}
+
+.ContactsTitle {
+    @apply text-2xl font-extrabold mb-14
+}
+
+.ContactsBlocksContainer {
+    @apply flex gap-4
+}
+
+.AddressesBlock {
+    @apply p-6  lg:px-8 lg:py-8 shadow-2xl
+}
+
+.AddressesCityTitle {
+    @apply text-2xl font-extrabold text-yellow-400 mb-4
+}
+
+.AddressesCityTextContainer {
+    @apply mb-8
+}
+
+.FirstAddressTitle {
+    @apply text-lg font-extrabold mb-6
+}
+
+.FirstAddressValue {
+    @apply text-base mb-6
+}
+
+.SecondAddressTitle {
+    @apply text-lg font-extrabold mb-6
+}
+
+.SecondAddressValue {
+    @apply text-base
+}
+
+.CallButton {
+    @apply text-base font-bold bg-yellow-400 text-gray-900 pt-4 pl-10 pb-4 pr-10 shadow-md rounded-lg
+}
+
+.RequestButton {
+    @apply text-base font-bold text-gray-900 pt-4 pl-11 pb-4 pr-11 border border-gray-900 ml-5 rounded-lg
+}
+
+.PricesBlock {
+    @apply flex flex-col gap-3
+}
+
+.RequisiteBlock {
+    @apply shadow-lg rounded-lg
+}
+
+.RequisiteBlockInside {
+    @apply p-6
+}
+
+.RequisiteBlockInsideTitle {
+    @apply text-2xl font-extrabold text-yellow-400 mb-8
+}
+
+.RequisiteBlockInsideButton {
+    @apply text-base font-bold text-gray-900 border shadow-md rounded-lg pt-4 pl-7 pb-4 pr-14 bg-yellow-400 flex items-center justify-center
+}
+
+.PriceBlock {
+    @apply shadow-lg rounded-lg
+}
+
+.PriceBlockInside {
+    @apply p-6
+}
+
+.PriceBlockInsideTitle {
+    @apply text-2xl font-extrabold text-yellow-400 mb-10
+}
+
+.PriceBlockInsideButton {
+    @apply text-base font-bold text-gray-900 border shadow-md rounded-lg pt-4 pl-7 pb-4 pr-14 bg-yellow-400 flex items-center justify-center
+}
+
+.DocImage {
+    @apply mr-1.5
+}
+
+.FeedbackDataBlock {
+    @apply flex flex-col gap-4
+}
+
+.EmailContainer {
+    @apply shadow-lg rounded-lg pt-6 pr-12 pb-8 pl-8
+}
+
+.EmailContainerTitle {
+    @apply text-2xl font-extrabold text-yellow-400 mb-4
+}
+
+.EmailContainerValue {
+    @apply text-base
+}
+
+.PhoneContainer {
+    @apply shadow-lg rounded-lg pt-6 pr-10 pb-7 pl-8
+}
+
+.PhoneContainerTitle {
+    @apply text-2xl font-extrabold text-yellow-400 mb-4
+}
+
+.PhoneContainerValue {
+    @apply text-base
+}
+
+.MessengersContainer {
+    @apply shadow-lg rounded-lg
+}
+
+.MessengersContainerInside {
+    @apply flex justify-center items-center space-x-4 pt-6 pr-24 pb-6 pl-24 mx-auto
+}
+
+
+@media (max-width: 1200px) {
+    .PricesBlock {
+        @apply gap-24
+    }
+
+    .FeedbackDataBlock {
+        @apply gap-16
+    }
+
+    .RequisiteBlockInsideButton {
+        @apply p-4
+    }
+
+    .PriceBlockInsideButton {
+        @apply p-4
+    }
+
+    .AddressBlockContainer {
+        @apply flex flex-col justify-center items-center
+    }
+    
+    .RequestButton {
+        @apply ml-0 mt-2
+    }
+}
+
+@media (max-width: 800px) {
+    .ContactsContainer {
+        @apply flex items-center
+    }
+
+    .ContactsBlocksContainer {
+        @apply flex flex-col items-center
+    }
+
+    .PricesBlock {
+        @apply gap-1
+    }
+
+    .RequisiteBlockInside {
+        @apply flex flex-col items-center
+    }
+
+    .PriceBlockInside {
+        @apply flex flex-col items-center
+    }
+
+    .EmailContainer {
+        @apply flex flex-col items-center
+    }
+
+    .PhoneContainer {
+        @apply flex flex-col items-center
+    }
+}
+
+@media (max-width: 375px) {
+    .ContactsBlocksContainer {
+        @apply flex flex-col
+    }
+
+    .ContactsContainer {
+        @apply flex flex-col p-0
+    }
+
+    .AddressBlockContainer {
+        @apply flex flex-col justify-center items-center
+    }
+
+    .ContactsTitle {
+        @apply p-2 m-0 mx-auto
+    }
+
+    .CallButton {
+        @apply mb-3
+    }
+
+    .RequestButton {
+        @apply ml-0
+    }
+}
+

@@ -6,6 +6,8 @@ import Basket from '@/shared/ui/icons/Basket'
 import { Search } from '@/features/Search'
 import SearchBtn from '@/shared/ui/icons/SearchBtn'
 import PagesBtn from '@/shared/ui/icons/PagesBtn';
+import Search from '@/shared/ui/icons/Search'
+import Link from 'next/link'
 
 const SecondHeader = () => {
 	const [isOpen, setIsOpen] = useState(false);

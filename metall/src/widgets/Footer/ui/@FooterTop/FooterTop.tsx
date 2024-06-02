@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './FooterTop.module.scss';
+import Link from 'next/link';
 
 const FooterTop = () => {
     return (
@@ -9,16 +10,16 @@ const FooterTop = () => {
                     <a href='#'>Главная страница</a>
                 </li>
                 <li>
-                    <a href='#'>Каталог товаров</a>
+                    <Link href='/'>Каталог товаров</Link>
                 </li>
                 <li>
-                    <a href='#'>О нас</a>
+                    <Link href='/'>О нас</Link>
                 </li>
                 <li>
-                    <a href='#'>Услуги</a>
+                    <Link href='/services'>Услуги</Link>
                 </li>
                 <li>
-                    <a href='#'>Контакты</a>
+                    <Link href='/'>Контакты</Link>
                 </li>
             </ul>
             <h2 className={styles.FooterTitle}>ПК PC</h2>

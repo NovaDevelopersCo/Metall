@@ -1,0 +1,20 @@
+
+.RadioInputLabel {
+    @apply flex inline-flex items-center
+}
+
+.RadioInputInput {
+    @apply h-5 w-5 border-yellow-500
+}
+
+.RadioInputLabel {
+    @apply ml-2 w-407
+}
+
+
+@media (max-width: 375px) {
+    .RadioInputLabel {
+        @apply w-60 text-xs
+    }
+}
+

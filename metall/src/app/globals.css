@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+
+/* 
 :root {
 	--foreground-rgb: 0, 0, 0;
 	--background-start-rgb: 214, 219, 220;
@@ -25,7 +27,34 @@ body {
 }
 
 @layer utilities {
-	.text-balance {
-		text-wrap: balance;
-	}
+  .text-balance {
+    text-wrap: balance;
+  }
+} */
+
+
+
+:root {
+  background: #FBFBFB;
 }
+
+/**/
+input[type="radio"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: inline-block;
+  vertical-align: middle;
+  background-origin: border-box;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 50%;
+  width: 1em;
+  height: 1em;
+  background-color: white;
+  border-color: #000;
+  cursor: pointer;
+  margin: 0;
+  outline: none;
+}
+

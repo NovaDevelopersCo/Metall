@@ -1,8 +1,10 @@
 import './globals.css'
 import { Header } from '@/widgets/Header'
 import { SecondHeader } from '@/widgets/SecondHeader'
+import { Footer } from '@/widgets/Footer'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+import AppProvider from './_utils/AppProvider'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -18,7 +20,16 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang='ru'>
-			<body className={inter.className}>{children}</body>
+			<body className={inter.className}>
+				<AppProvider>
+					<div className='stincky top-0 z-50'>
+						<Header/>
+						<SecondHeader/>
+					</div>
+					{children}
+					<div className='stincky bottom-0 z-50'><Footer/></div>
+				</AppProvider>
+			</body>
 		</html>
 	)
 }
