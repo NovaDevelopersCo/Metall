@@ -1,0 +1,16 @@
+  .Container {
+    @apply h-full absolute top-0 right-0 p-6 pl-10 pr-10 pt-6 bg-[#FFC824] hidden h-full z-20;
+  }
+  
+  .Menu {
+    @apply flex flex-col gap-10;
+  }
+  
+  .Close {
+    @apply self-end;
+  }
+  
+  .clockBlock {
+    @apply items-center flex gap-2.5;
+  }
+  

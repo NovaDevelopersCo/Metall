@@ -8,14 +8,19 @@
 
 .secondHeaderNavigation {
 	@apply flex gap-2 flex-nowrap items-center justify-between;
-	max-width: 1200px; //сделать желательно компонент с контейнером
+	max-width: 1200px;
 	margin: 0 auto;
 }
 .menu {
 	@apply flex gap-2 flex-nowrap items-center justify-between w-full;
 	font-weight: 600;
 }
-
+.pages{
+	display: flex;
+	justify-content: space-between;
+	gap: 40px;
+	flex-wrap: wrap;
+}
 .search {
 	@apply flex font-medium;
 	border-bottom: 2px solid black;
@@ -38,6 +43,15 @@
 		@apply font-bold h-[18px] w-[18px];
 		margin: 10px;
 	}
+	@media (max-width: 750px) {
+		border: none;
+		input{
+			display: none;
+		}
+		svg{
+			@apply h-[27px] w-[27px];
+		}
+	}
 }
 .logo {
 	@apply text-[30px] font-bold;
@@ -48,12 +62,28 @@
 	gap: 1rem;
 }
 .telegram {
-	width: 27px;
-	height: 27px;
+	@apply h-[27px] w-[27px];
 }
 
 .basket {
 	padding: 12px;
 	border: 1px solid black;
 	border-radius: 25px;
+}
+.pagesMenu{
+	@apply hidden mt-2;
+}
+@media (max-width: 1050px) {
+	.secondHeader{
+		padding: 22px;
+	}
+	.pagesMenu{
+		display: block;
+	}
+	.pages{
+		display: none;
+	}
+	.basket{
+		padding: 7px;
+	}
 }
