@@ -23,7 +23,7 @@ export default function RootLayout({
 			<body className={inter.className}>
 				<AppProvider>
 					<div className='stincky top-0 z-50'>
-						<Header />
+						{/* <Header /> */}
 						<SecondHeader />
 					</div>
 					{children}

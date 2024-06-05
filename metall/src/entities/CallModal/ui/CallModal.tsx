@@ -41,7 +41,7 @@ const CallModal: React.FC = () => {
 				Open Modal
 			</Button>
 			<Modal
-				title={isSubmitted ? 'Вы заказали звонок' : 'Заказать звонок'}
+				title={<div style={{ display: 'flex', justifyContent: 'center', fontSize: '32px', fontWeight: '800', lineHeight: '37.5px' }}>{isSubmitted ? 'Вы заказали звонок' : 'Заказать звонок'}</div>}
 				open={isModalOpen}
 				onOk={handleOk}
 				onCancel={handleCancel}
@@ -49,9 +49,9 @@ const CallModal: React.FC = () => {
 				centered
 			>
 				{isSubmitted ? (
-					<div style={{ textAlign: 'center' }}>
-						<div>Спасибо за Вашу заявку.<br/> В ближайшее время наш специалист свяжется с вами.</div>
-						<Button type='primary' onClick={handleCancel} style={{ marginTop: '20px' }}>
+					<div style={{ textAlign: 'center', marginTop: '40px', fontSize: '16px' }}>
+						<div>Спасибо за Вашу заявку.<br /> В ближайшее время наш специалист свяжется с вами.</div>
+						<Button type='primary' onClick={handleCancel} style={{ marginTop: '20px', fontWeight: 'bold', backgroundColor: '#FFC824', color: 'black', borderRadius: 10, paddingTop: 20, paddingBottom: 20, paddingLeft: 50, paddingRight: 50 }}>
 							Закрыть
 						</Button>
 					</div>
@@ -82,11 +82,11 @@ const CallModal: React.FC = () => {
 							className={style.Input}
 						/>
 						<br />
-						<button style={{ fontWeight: 'bold', backgroundColor: '#FFC824', marginTop: 30 , borderRadius: 10, paddingTop: 5, paddingBottom: 5, paddingLeft: 10, paddingRight: 10 }}>
-                            Отправить
-                        </button>
-						<p style={{ fontWeight: 'bold', marginTop: 40 }}>
-							Отправляя форму, вы даете согласие на <br/> обработку персональных данных.
+						<button style={{ fontWeight: 'bold', backgroundColor: '#FFC824', marginTop: 30, borderRadius: 10, paddingTop: 15, paddingBottom: 15, paddingLeft: 50, paddingRight: 50 }}>
+							Отправить
+						</button>
+						<p style={{ fontWeight: 'bold', fontSize: '16px', marginTop: 40 }}>
+							Отправляя форму, вы даете согласие на <br /> обработку персональных данных.
 						</p>
 					</form>
 				)}

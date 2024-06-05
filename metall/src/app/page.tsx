@@ -1,4 +1,4 @@
-import { CallModal } from '@/entities'
+import { CallModal, SubmitApplication } from '@/entities'
 import Main from '@/widgets/Main/ui/Main'
 
 export default function Home() {
@@ -6,6 +6,7 @@ export default function Home() {
 		<>
 			<Main />
 			<CallModal />
+			<SubmitApplication />
 		</>
 	)
 }
