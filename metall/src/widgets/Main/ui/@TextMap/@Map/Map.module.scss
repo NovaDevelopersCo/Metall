@@ -50,7 +50,7 @@
 	display: inline-block;
 }
 
-.button {
+.buttonCall {
 	display: flex;
 	position: relative;
 	margin-top: 10%;
@@ -67,7 +67,7 @@
 		background-color 0.3s ease,
 		color 0.3s ease;
 }
-.button1 {
+.buttonSubmit {
 	display: flex;
 	position: relative;
 	margin-top: 1em;
@@ -84,19 +84,19 @@
 		color 0.3s ease;
 }
 
-.button1 {
+.buttonSubmit {
 	margin-top: -3.5em;
 	margin-left: 20em;
 }
 
-.button:hover,
-.button1:hover {
+.buttonCall:hover,
+.buttonSubmit:hover {
 	background-color: #fff;
 	color: #000;
 }
 
-.button:active,
-.button1:active {
+.buttonCall:active,
+.buttonSubmit:active {
 	background-color: #646161;
 	color: #000;
 }
@@ -115,11 +115,11 @@
 	}
 
 	.Text {
-		font-size: 4vw; /* Увеличен размер текста */
+		font-size: 4vw;
 	}
 
 	.H2Text {
-		font-size: 2.5vw; /* Увеличен размер заголовка */
+		font-size: 2.5vw;
 	}
 
 	.Map {
@@ -127,9 +127,9 @@
 		height: 20%;
 	}
 
-	.button1 {
-		margin-left: auto; /* Удален фиксированный отступ */
-		margin-right: auto; /* Удален фиксированный отступ */
+	.buttonSubmit {
+		margin-left: auto;
+		margin-right: auto;
 		margin-top: -3.6em;
 	}
 }

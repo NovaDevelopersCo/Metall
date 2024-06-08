@@ -1,7 +1,19 @@
+'use client'
+
 import style from './Map.module.scss'
-import React from 'react'
+import { CallModal, SubmitApplication } from '@/entities'
+import React, { useState } from 'react'
 
 const Map = () => {
+	const [isCallModalOpen, setIsCallModalOpen] = useState(false)
+	const [isSubmitModalOpen, setIsSubmitModalOpen] = useState(false)
+
+	const showCallModal = () => setIsCallModalOpen(true)
+	const hideCallModal = () => setIsCallModalOpen(false)
+
+	const showSubmitModal = () => setIsSubmitModalOpen(true)
+	const hideSubmitModal = () => setIsSubmitModalOpen(false)
+
 	return (
 		<div className={style.container}>
 			<div className={style.left}>
@@ -30,10 +42,30 @@ const Map = () => {
 					<h1 className={style.text}>
 						Локация 1: г. Москва, Южное шоссе, 42, склад №5
 					</h1>
-					<button className={style.button}>Заказать звонок</button>
-					<button className={style.button1}>Оставить заявку</button>
+					<div className={style.buttons}>
+						<button
+							className={style.buttonCall}
+							onClick={showCallModal}
+						>
+							Заказать звонок
+						</button>
+						<button
+							className={style.buttonSubmit}
+							onClick={showSubmitModal}
+						>
+							Оставить заявку
+						</button>
+					</div>
 				</div>
 			</div>
+			<CallModal
+				isModalOpen={isCallModalOpen}
+				handleCancel={hideCallModal}
+			/>
+			<SubmitApplication
+				isModalOpen={isSubmitModalOpen}
+				handleCancel={hideSubmitModal}
+			/>
 		</div>
 	)
 }
