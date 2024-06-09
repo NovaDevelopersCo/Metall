@@ -1,12 +1,17 @@
+"use client"
+
 import Image from "next/image"
 import arrow from '@/assets/arrow.png'
 import aboutUs from '@/assets/aboutUs.png'
-import {BreadKroshki} from '@/shared/index'  
 import { AboutUsbuttonsItems } from "./AboutUs.buttons"
 import { DescribeAboutUs } from "./DescribeAboutUs"
 import { UsAdvantages } from "./UsAdvantages"
+import { BreadKroshki } from "@/shared"
 
-export const AboutUs = () => {
+
+
+ const AboutUs = () => {
+
     return (
     <div className="flex justify-center ">
                     <div className="flex flex-col justify-center">
@@ -31,4 +36,4 @@ export const AboutUs = () => {
     </div>
     )
 }
-
+export default AboutUs;

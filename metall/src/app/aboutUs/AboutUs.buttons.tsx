@@ -1,5 +1,3 @@
-import {AboutUsButtons} from './AboutUs.data'
-
 
 
 export const AboutUsbuttonsItems = ({}) =>{
