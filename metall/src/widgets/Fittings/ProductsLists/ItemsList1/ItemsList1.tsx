@@ -47,7 +47,7 @@ export default function ItemsList1() {
                                 <div className={styles.CounterDisplayContainer}>
                                     1
                                 </div>
-                                <button className={styles.CounterDecrement}>+</button>
+                                <button className={styles.CounterIncrement}>+</button>
                             </div>
                         </div>
                         <button className={styles.ItemsValuesButton}>Заказать</button>
@@ -73,7 +73,7 @@ export default function ItemsList1() {
                                 <div className={styles.CounterDisplayContainer}>
                                     1
                                 </div>
-                                <button className={styles.CounterDecrement}>+</button>
+                                <button className={styles.CounterIncrement}>+</button>
                             </div>
                         </div>
                         <button className={styles.ItemsValuesButton}>Заказать</button>
@@ -99,7 +99,7 @@ export default function ItemsList1() {
                                 <div className={styles.CounterDisplayContainer}>
                                     1
                                 </div>
-                                <button className={styles.CounterDecrement}>+</button>
+                                <button className={styles.CounterIncrement}>+</button>
                             </div>
                         </div>
                         <button className={styles.ItemsValuesButton}>Заказать</button>
@@ -125,7 +125,7 @@ export default function ItemsList1() {
                                 <div className={styles.CounterDisplayContainer}>
                                     1
                                 </div>
-                                <button className={styles.CounterDecrement}>+</button>
+                                <button className={styles.CounterIncrement}>+</button>
                             </div>
                         </div>
                         <button className={styles.ItemsValuesButton}>Заказать</button>
@@ -151,7 +151,7 @@ export default function ItemsList1() {
                                 <div className={styles.CounterDisplayContainer}>
                                     1
                                 </div>
-                                <button className={styles.CounterDecrement}>+</button>
+                                <button className={styles.CounterIncrement}>+</button>
                             </div>
                         </div>
                         <button className={styles.ItemsValuesButton}>Заказать</button>
@@ -177,7 +177,7 @@ export default function ItemsList1() {
                                 <div className={styles.CounterDisplayContainer}>
                                     1
                                 </div>
-                                <button className={styles.CounterDecrement}>+</button>
+                                <button className={styles.CounterIncrement}>+</button>
                             </div>
                         </div>
                         <button className={styles.ItemsValuesButton}>Заказать</button>
@@ -203,7 +203,7 @@ export default function ItemsList1() {
                                 <div className={styles.CounterDisplayContainer}>
                                     1
                                 </div>
-                                <button className={styles.CounterDecrement}>+</button>
+                                <button className={styles.CounterIncrement}>+</button>
                             </div>
                         </div>
                         <button className={styles.ItemsValuesButton}>Заказать</button>
@@ -229,7 +229,7 @@ export default function ItemsList1() {
                                 <div className={styles.CounterDisplayContainer}>
                                     1
                                 </div>
-                                <button className={styles.CounterDecrement}>+</button>
+                                <button className={styles.CounterIncrement}>+</button>
                             </div>
                         </div>
                         <button className={styles.ItemsValuesButton}>Заказать</button>
@@ -255,7 +255,7 @@ export default function ItemsList1() {
                                 <div className={styles.CounterDisplayContainer}>
                                     1
                                 </div>
-                                <button className={styles.CounterDecrement}>+</button>
+                                <button className={styles.CounterIncrement}>+</button>
                             </div>
                         </div>
                         <button className={styles.ItemsValuesButton}>Заказать</button>
@@ -281,7 +281,7 @@ export default function ItemsList1() {
                                 <div className={styles.CounterDisplayContainer}>
                                     1
                                 </div>
-                                <button className={styles.CounterDecrement}>+</button>
+                                <button className={styles.CounterIncrement}>+</button>
                             </div>
                         </div>
                         <button className={styles.ItemsValuesButton}>Заказать</button>
@@ -307,7 +307,7 @@ export default function ItemsList1() {
                                 <div className={styles.CounterDisplayContainer}>
                                     1
                                 </div>
-                                <button className={styles.CounterDecrement}>+</button>
+                                <button className={styles.CounterIncrement}>+</button>
                             </div>
                         </div>
                         <button className={styles.ItemsValuesButton}>Заказать</button>
@@ -333,7 +333,7 @@ export default function ItemsList1() {
                                 <div className={styles.CounterDisplayContainer}>
                                     1
                                 </div>
-                                <button className={styles.CounterDecrement}>+</button>
+                                <button className={styles.CounterIncrement}>+</button>
                             </div>
                         </div>
                         <button className={styles.ItemsValuesButton}>Заказать</button>
@@ -359,7 +359,7 @@ export default function ItemsList1() {
                                 <div className={styles.CounterDisplayContainer}>
                                     1
                                 </div>
-                                <button className={styles.CounterDecrement}>+</button>
+                                <button className={styles.CounterIncrement}>+</button>
                             </div>
                         </div>
                         <button className={styles.ItemsValuesButton}>Заказать</button>
@@ -385,7 +385,7 @@ export default function ItemsList1() {
                                 <div className={styles.CounterDisplayContainer}>
                                     1
                                 </div>
-                                <button className={styles.CounterDecrement}>+</button>
+                                <button className={styles.CounterIncrement}>+</button>
                             </div>
                         </div>
                         <button className={styles.ItemsValuesButton}>Заказать</button>

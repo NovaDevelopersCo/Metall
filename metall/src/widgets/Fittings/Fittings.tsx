@@ -5,6 +5,7 @@ import { useState } from 'react'
 import styles from './Fittings.module.scss'
 import RadioButton from './RadioButton/RadioButton'
 import ItemsList1 from './ProductsLists/ItemsList1/ItemsList1'
+import ItemsList2 from './ProductsLists/ItemsList2/ItemsList2'
 
 export default function Fittings() {
     //
@@ -64,6 +65,8 @@ export default function Fittings() {
                     </div>
                     <div className={styles.itemsList}>
                         <ItemsList1 />
+                        <br />
+                        <ItemsList2 />
                     </div>
                 </div>
             </div>
