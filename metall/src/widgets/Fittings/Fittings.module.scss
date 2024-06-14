@@ -1,0 +1,53 @@
+
+.mainContainer {
+    @apply ml-36
+}
+
+.fittingsTitle {
+    @apply text-3xl font-extrabold text-yellow-400 mb-14 mt-14
+}
+
+.commonItemsContainer {
+    @apply flex
+}
+
+.lengthContainerTitle {
+    @apply text-lg font-bold
+}
+
+.lengthRadioContainer {
+    @apply flex flex-col pt-5 pr-11 pb-5 pl-3
+}
+
+.diameterRadioContainer {
+    @apply flex flex-col pt-5 pr-16 pb-5 pl-3
+}
+
+.itemsFiltersTitle {
+    @apply text-lg font-bold text-yellow-400 mb-14
+}
+
+.itemsContainer {
+    @apply ml-16
+}
+
+.itemsTypes {
+    @apply flex flex-row gap-3 mb-6  justify-end
+}
+
+.itemsTypeContainerFirst {
+    @apply pt-3 pr-6 pb-3 pl-6  shadow-lg -ml-2 mt-4
+}
+
+.itemsTypeContainerSecond {
+    @apply pt-3 pr-4 pb-3 pl-4  shadow-lg -ml-2 mt-4
+}
+
+.itemsTypeContainerThird {
+    @apply pt-3 pr-4 pb-3 pl-4  shadow-lg -ml-2 mt-4
+}
+
+.itemsType {
+    @apply text-base font-bold
+}
+

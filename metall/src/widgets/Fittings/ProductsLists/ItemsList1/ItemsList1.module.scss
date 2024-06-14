@@ -1,0 +1,148 @@
+
+.ItemsList1Container {
+    @apply flex flex-col gap-4  border border-yellow-300 rounded-lg
+}
+
+.ItemsValuesDescriptions {
+    @apply flex flex-col gap-4  border-b border-yellow-300 rounded-lg
+}
+
+.ItemsValuesDescriptionsContainer {
+    @apply flex gap-5  pl-6 pr-6  pt-3 pb-3
+}
+
+.ItemsValuesFirstContainer {
+    @apply flex p-2
+}
+
+.ItemsValuesSecondContainer {
+    @apply flex gap-7
+}
+
+
+/**/
+
+.ItemsValuesSizeContainer {
+    @apply p-2
+}
+
+.ItemsValuesPriceContainer {
+    @apply p-2
+}
+
+.ItemsValuesMarkContainer {
+    @apply pt-2 pr-1 pb-2 pl-1
+}
+
+.ItemsValuesCountContainer {
+    @apply p-2
+}
+
+
+/**/
+
+.ItemsValuesTitle {
+    @apply text-base font-bold
+}
+
+.ItemsValuesSize {
+    @apply text-lg font-semibold
+}
+
+.ItemsValuesPrice {
+    @apply text-lg font-semibold
+}
+
+.ItemsValuesMark {
+    @apply text-lg font-semibold
+}
+
+.ItemsValuesCount {
+    @apply text-lg font-semibold
+}
+
+.ItemsValuesButton {
+    @apply text-base font-bold bg-yellow-300 rounded p-2
+}
+
+
+/**/
+
+.ItemsList {
+    @apply flex flex-col gap-4  items-center
+}
+
+/**/
+
+.FirstItem {
+    @apply flex gap-14  pl-2 pr-2  border-b border-gray-800 border-opacity-50
+}
+
+.SecondItem {
+    @apply flex gap-14  pl-2 pr-2  border-b border-gray-800 border-opacity-50
+}
+
+/**/
+
+.FirstItemFirstContainer {
+    @apply p-2  mb-2
+}
+
+.FirstItemSecondContainer {
+    @apply flex gap-7  mb-2
+}
+
+.SecondItemFirstContainer {
+    @apply p-2
+}
+
+.SecondItemSecondContainer {
+    @apply flex gap-7
+}
+
+.SizeContainerFirst {
+    @apply pt-2 pr-8 pb-2 pl-8
+}
+
+.SizeContainerSecond {
+    @apply pt-2 pr-6 pb-2 pl-6
+}
+
+.PriceContainer {
+    @apply p-2
+}
+
+.MarkContainer {
+    @apply pt-2 pr-9 pb-2 pl-9
+}
+
+.CountContainer {
+    @apply pt-1 pr-2 pb-1 pl-2
+}
+
+
+/**/
+
+.Counter {
+    @apply flex flex-row
+}
+
+.CounterDecrement {
+    @apply pt-1 pr-3 pb-1 pl-3
+}
+
+.CounterDisplayContainer {
+    @apply pt-1 pr-4 pb-1 pl-4
+}
+
+.CounterDecrement {
+    @apply pt-1 pr-2 pb-1 pl-2
+}
+
+/**/
+
+.ItemTitle {
+    @apply text-base font-bold
+}
+
+

@@ -1,0 +1,12 @@
+
+.RadioButtonLabel {
+    @apply flex inline-flex items-center
+}
+
+.RadioButtonInput {
+    @apply h-5 w-5 border-yellow-500
+}
+
+.RadioButtonLabel {
+    @apply ml-2
+}
