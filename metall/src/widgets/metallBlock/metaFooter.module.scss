@@ -72,3 +72,9 @@
 		margin-top: 20px; /* Add some space between the containers */
 	}
 }
+@media (max-width: 650px){
+	.leftContainer .leftText {
+		width: 300px;
+		margin-bottom: 50px;
+	}
+}

@@ -72,7 +72,8 @@
 	align-items: center;
 	background-color: #f4c024;
 	border-radius: 10px;
-	width: 12vw;
+	width: 170px;
+	min-width: 60px;
 	height: 50px;
 	padding: 0px 10px;
 	.button-icon {
@@ -80,14 +81,22 @@
 		height: 30px;
 	}
 }
-@media (max-width: 900px) {
+@media (max-width: 600px) {
+.card-container{
+	display: grid;
+	grid-template-columns: repeat(2, minmax(150px, 1fr));
+	width: 80vw;
+}
 	.catalogTitle {
 		font-size: 19px;
+		margin-bottom: 15px;
 	}
 	.catalogHeader {
 		display: block;
 	}
 	.list-button {
-		width :60px;
+		width :150px;
+		margin-left: 30vw;
 	}
+
 }
