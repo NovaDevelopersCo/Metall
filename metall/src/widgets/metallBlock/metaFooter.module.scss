@@ -1,0 +1,80 @@
+.footerContainer {
+	display: flex;
+	justify-content: space-between;
+	padding: 20px;
+	background-color: #f9f9f9;
+	flex-wrap: wrap; /* This allows wrapping */
+}
+
+.leftContainer {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	margin-left: 4vw;
+}
+
+.leftContainer .leftText {
+	width: 600px;
+	margin-bottom: 50px;
+}
+
+.leftContainer .orderCallButton {
+	background-color: #f4c024;
+	border-radius: 10px;
+	width: 150px;
+	height: 40px;
+	color: black;
+	border: none;
+	cursor: pointer;
+	font-weight: bold;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	white-space: nowrap;
+	margin-left: 200px;
+}
+
+.rightContainer {
+	display: flex;
+	align-items: center;
+	justify-content: right;
+	text-align: right;
+	font-weight: bold;
+	width: 600px;
+	margin-right: 7vw;
+}
+
+.rightContainer .rightText {
+	color: black;
+	font-size: 24px;
+	margin-top: 8vw;
+}
+
+.rightContainer .rightText .highlightText {
+	color: #f4c024;
+	display: block;
+}
+
+/* Media Query for screen sizes 500px or less */
+@media (max-width: 700px) {
+	.footerContainer {
+		flex-direction: column; /* Stack the containers vertically */
+		align-items: flex-start;
+	}
+
+	.leftContainer, .rightContainer {
+		width: 100%; /* Make both containers take full width */
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	.rightContainer {
+		margin-top: 20px; /* Add some space between the containers */
+	}
+}
+@media (max-width: 650px){
+	.leftContainer .leftText {
+		width: 300px;
+		margin-bottom: 50px;
+	}
+}
