@@ -1,0 +1,54 @@
+.FilterContainer {
+	width: 100%;
+	margin-top: 30px;
+	display: flex;
+	justify-content: space-between;
+	.LeftSide {
+		display: flex;
+		align-items: center;
+		gap: 42px;
+		.CirclesContainer {
+			.Circle {
+				width: 10px;
+				height: 10px;
+				border-radius: 50%;
+				background-color: #f4c024;
+				margin-bottom: 5px;
+			}
+		}
+		.TitleFilter {
+			color: #f4c024;
+			font-size: 18px;
+			font-weight: 700;
+			line-height: 21px;
+		}
+	}
+	.RightSide {
+		max-width: 675px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: left;
+		.Filters {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 14px;
+			.FilterButton {
+				border-radius: 10px;
+				box-shadow:
+					0px 1px 2px 0px rgba(163, 163, 163, 0.03),
+					-2px 4px 4px 0px rgba(163, 163, 163, 0.03),
+					-4px 9px 6px 0px rgba(163, 163, 163, 0.02),
+					-7px 16px 7px 0px rgba(163, 163, 163, 0.01),
+					-10px 25px 7px 0px rgba(163, 163, 163, 0);
+				background: rgb(255, 255, 255);
+				padding: 12px 16px 12px 16px;
+				font-size: 16px;
+				font-weight: 700;
+				line-height: 19px;
+				&:hover {
+					background-color: #fafafa;
+				}
+			}
+		}
+	}
+}
