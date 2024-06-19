@@ -1,5 +1,6 @@
 import style from './Catalog.module.scss'
 import Filters from './Filters/Filters'
+import ProductSection from './ProductsSection/ProductSection'
 import Breadcrumbs from '@/entities/BreadCrumbs/ui/Breadcrumbs'
 
 const Catalog: React.FC = () => {
@@ -18,6 +19,7 @@ const Catalog: React.FC = () => {
 				/>
 				<h1 className={style.Title}>Листы</h1>
 				<Filters />
+				<ProductSection />
 			</div>
 		</>
 	)
